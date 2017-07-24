@@ -32,13 +32,13 @@
 .img{margin-top:30px;}
 .img a{ padding-left:8px;}
 
-.backone{ background-image:url(../pic/QQͼƬ20170722100346.png); width:308px; height:308px; margin-top:25px; margin-left:3px; float:left;}
+.backone{ background-image:url(../pic/picone.png); width:308px; height:308px; margin-top:25px; margin-left:3px; float:left;}
 .cycle{border:3px solid #FFFFFF; width:120px; height:120px; position:absolute; margin:94px;  border-radius:50%; overflow:hidden; }
 .float{float:left; margin-top:20px; padding:4px;}
 .floattwo{float:left; margin-top:3px; margin-left:3px;}
-.backtwo{ background-image:url(../pic/QQͼƬ20170722100216.png); width:308px; height:308px;;margin-top:3px;margin-left:4px;float:left;}
-.backthree{ background-image:url(../pic/QQͼƬ20170722100252.png); width:308px; height:308px;;margin-top:3px;margin-left:4px;float:left;}
-.backfore{ background-image:url(../pic/QQͼƬ20170722100507.png); width:308px; height:308px;;margin-top:3px;margin-left:4px;float:left;}
+.backtwo{ background-image:url(../pic/pictwo.png); width:308px; height:308px;;margin-top:3px;margin-left:4px;float:left;}
+.backthree{ background-image:url(../pic/picthree.png); width:308px; height:308px;;margin-top:3px;margin-left:4px;float:left;}
+.backfore{ background-image:url(../pic/picfore.png); width:308px; height:308px;;margin-top:3px;margin-left:4px;float:left;}
 
 .midbot{clear:both; text-align:center; padding-top:30px;}
 .botline{ border-top:1px solid #CCCCCC; display:inline-block; width:300px;}
@@ -86,3 +86,5 @@
 .botbot{ background-color:#000000; width:100%;  height:60px; clear:both; text-align:center;}
 
 .bottext{ color:#FFFFFF; padding-top:22px;}
+
+.wid{ width:1263px;}
