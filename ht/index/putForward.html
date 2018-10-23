@@ -1,0 +1,81 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我要提现</title>
+	<link type="text/css" rel="stylesheet" href="CSS/style.css">
+    <script src="JS/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="JS/layui-v2.3.0/layui/layui.all.js"></script>
+
+</head>
+<body>
+<div class="pubpage"></div>
+<div class="account-box">
+    <div class="account-msg">
+        <div class="account-content">
+            <div class="account-title"><span>可提现金额：</span></div>
+            <input type="text" class="acconut-input" id="money">
+        </div>
+        <div class="account-content">
+            <div class="account-title"><span>开户名：</span></div>
+            <input type="text" class="acconut-input" id="name">
+        </div>
+        <div class="account-content">
+            <div class="account-title"><span>开户支行网点：</span></div>
+            <input type="text" class="acconut-input" id="adress">
+        </div>
+        <div class="account-content">
+            <div class="account-title"><span>银行卡号：</span></div>
+            <input type="text" class="acconut-input" id="cardnumber">
+        </div>
+        <div class="account-content">
+            <div class="account-title"><span>提现金额：</span></div>
+            <input type="text" class="acconut-input" id="putforwardNum">
+        </div>
+        <div class="account-content">
+            <div class="account-title"><span>电话：</span></div>
+            <input type="text" class="acconut-input" id="phone">
+        </div>
+        <input class="submit-btn" value="提交" type="button" onClick="putForward()">
+    </div>
+
+
+</div>
+</body>
+<script>
+
+
+   
+
+    function putForward() {
+        var money=$("#money").val();
+        var name=$("#name").val();
+        var adress=$("#adress").val();
+        var cardnumber=$("#cardnumber").val();
+        var putforwardNum=$("#putforwardNum").val();
+        var phone=$("#phone").val();
+
+        if(money==""){
+            layer.msg("请输入可提现金额")
+        }
+        else  if(name==""){
+            layer.msg("请输入开户名")
+        }
+        else if(adress==""){
+            layer.msg("请输入开户支行网点")
+        }
+        else if(cardnumber==""){
+            layer.msg("请输入银行卡号")
+        }
+        else if(putforwardNum==""){
+            layer.msg("请输入提现金额")
+        }
+        else if(phone==""){
+            layer.msg("请输入电话")
+        }
+        else {
+            layer.msg("提交成功！")
+        }
+    }
+</script>
+</html>

@@ -1,0 +1,1400 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link type="text/css" rel="stylesheet" href="CSS/index.css">
+<script src="JS/jquery-1.9.1.min.js"></script>
+<script src="JS/layui-v2.3.0/layui/layui.all.js"></script>
+
+
+
+</head>
+
+<body>
+    <div class="pubpage"></div>
+    <div class="home-box">
+        <div class="home-banner-box">
+           <div class="home-banner">
+            <div class="home-banner-name">体育彩票</div>
+            <div class="home-banner-win">今日输赢：0</div>
+            <div>699202期</div>
+            <div>距离封盘</div>
+            <div class="time-area" style="margin-top: 7px; color:red;"> </div>
+            <div>距离开奖</div>
+            <div class="time-area" style=" margin-top: 7px;color: green;"> </div>
+        </div>
+        </div>
+        <div class="home-top">
+
+				<input type="checkbox" class="home-check">
+
+            <div class="home-content">
+                <span>预设</span>
+                <span>金额</span>
+            </div>
+            <form action="">
+                <input type="text" placeholder="" class="home-top-input" onKeyUp="upda()">
+                <input type="button" class="btn_submit"  value="确定" onClick="sure()" />
+                <input type="reset" class="btn_submit"  value="重置" />
+            </form>
+
+        </div>
+
+        <div class="home-list-content">
+
+        <div class="home-list">
+             <div class="home-list-title">
+                 <span>冠军</span>
+             </div>
+            <div class="home-list-box">
+                <table>
+                    <tr>
+                        <td class="td-border">
+                            <div class="num color1">1</div>
+                        </td>
+                        <td class="td-border"><span>10.00</span></td>
+                        <td class="td-border-none"> <input type="text">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="home-list-box">
+                <table>
+                    <tr>
+                        <td class="td-border">
+                            <div class="num color2">2</div>
+                        </td>
+                        <td class="td-border"><span>10.00</span></td>
+                        <td class="td-border-none"> <input type="text">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="home-list-box">
+                <table>
+                    <tr>
+                        <td class="td-border">
+                            <div class="num color3">3</div>
+                        </td>
+                        <td class="td-border"><span>10.00</span></td>
+                        <td class="td-border-none"> <input type="text">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="home-list-box">
+                <table>
+                    <tr>
+                        <td class="td-border">
+                            <div class="num color4">4</div>
+                        </td>
+                        <td class="td-border"><span>10.00</span></td>
+                        <td class="td-border-none"> <input type="text">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="home-list-box">
+                <table>
+                    <tr>
+                        <td class="td-border">
+                            <div class="num color5">5</div>
+                        </td>
+                        <td class="td-border"><span>10.00</span></td>
+                        <td class="td-border-none"> <input type="text">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="home-list-box">
+                <table>
+                    <tr>
+                        <td class="td-border">
+                            <div class="num color6">6</div>
+                        </td>
+                        <td class="td-border"><span>10.00</span></td>
+                        <td class="td-border-none"> <input type="text">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="home-list-box">
+                <table>
+                    <tr>
+                        <td class="td-border">
+                            <div class="num color7">7</div>
+                        </td>
+                        <td class="td-border"><span>10.00</span></td>
+                        <td class="td-border-none"> <input type="text">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="home-list-box">
+                <table>
+                    <tr>
+                        <td class="td-border">
+                            <div class="num color8">8</div>
+                        </td>
+                        <td class="td-border"><span>10.00</span></td>
+                        <td class="td-border-none"> <input type="text">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="home-list-box">
+                <table>
+                    <tr>
+                        <td class="td-border">
+                            <div class="num color9">9</div>
+                        </td>
+                        <td class="td-border"><span>10.00</span></td>
+                        <td class="td-border-none"> <input type="text">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="home-list-box">
+                <table>
+                    <tr>
+                        <td class="td-border">
+                            <div class="num color10">10</div>
+                        </td>
+                        <td class="td-border"><span>10.00</span></td>
+                        <td class="td-border-none"> <input type="text">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="home-list">
+             <div class="home-list-title">
+                 <span>亚军</span>
+             </div>
+            <div class="home-list-box">
+                <table>
+                    <tr>
+                        <td class="td-border">
+                            <div class="num color1">1</div>
+                        </td>
+                        <td class="td-border"><span>10.00</span></td>
+                        <td class="td-border-none"> <input type="text">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="home-list-box">
+                <table>
+                    <tr>
+                        <td class="td-border">
+                            <div class="num color2">2</div>
+                        </td>
+                        <td class="td-border"><span>10.00</span></td>
+                        <td class="td-border-none"> <input type="text">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="home-list-box">
+                <table>
+                    <tr>
+                        <td class="td-border">
+                            <div class="num color3">3</div>
+                        </td>
+                        <td class="td-border"><span>10.00</span></td>
+                        <td class="td-border-none"> <input type="text">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="home-list-box">
+                <table>
+                    <tr>
+                        <td class="td-border">
+                            <div class="num color4">4</div>
+                        </td>
+                        <td class="td-border"><span>10.00</span></td>
+                        <td class="td-border-none"> <input type="text">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="home-list-box">
+                <table>
+                    <tr>
+                        <td class="td-border">
+                            <div class="num color5">5</div>
+                        </td>
+                        <td class="td-border"><span>10.00</span></td>
+                        <td class="td-border-none"> <input type="text">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="home-list-box">
+                <table>
+                    <tr>
+                        <td class="td-border">
+                            <div class="num color6">6</div>
+                        </td>
+                        <td class="td-border"><span>10.00</span></td>
+                        <td class="td-border-none"> <input type="text">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="home-list-box">
+                <table>
+                    <tr>
+                        <td class="td-border">
+                            <div class="num color7">7</div>
+                        </td>
+                        <td class="td-border"><span>10.00</span></td>
+                        <td class="td-border-none"> <input type="text">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="home-list-box">
+                <table>
+                    <tr>
+                        <td class="td-border">
+                            <div class="num color8">8</div>
+                        </td>
+                        <td class="td-border"><span>10.00</span></td>
+                        <td class="td-border-none"> <input type="text">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="home-list-box">
+                <table>
+                    <tr>
+                        <td class="td-border">
+                            <div class="num color9">9</div>
+                        </td>
+                        <td class="td-border"><span>10.00</span></td>
+                        <td class="td-border-none"> <input type="text">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="home-list-box">
+                <table>
+                    <tr>
+                        <td class="td-border">
+                            <div class="num color10">10</div>
+                        </td>
+                        <td class="td-border"><span>10.00</span></td>
+                        <td class="td-border-none"> <input type="text">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="home-list">
+             <div class="home-list-title">
+                 <span>季军</span>
+             </div>
+            <div class="home-list-box">
+                <table>
+                    <tr>
+                        <td class="td-border">
+                            <div class="num color1">1</div>
+                        </td>
+                        <td class="td-border"><span>10.00</span></td>
+                        <td class="td-border-none"> <input type="text">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="home-list-box">
+                <table>
+                    <tr>
+                        <td class="td-border">
+                            <div class="num color2">2</div>
+                        </td>
+                        <td class="td-border"><span>10.00</span></td>
+                        <td class="td-border-none"> <input type="text">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="home-list-box">
+                <table>
+                    <tr>
+                        <td class="td-border">
+                            <div class="num color3">3</div>
+                        </td>
+                        <td class="td-border"><span>10.00</span></td>
+                        <td class="td-border-none"> <input type="text">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="home-list-box">
+                <table>
+                    <tr>
+                        <td class="td-border">
+                            <div class="num color4">4</div>
+                        </td>
+                        <td class="td-border"><span>10.00</span></td>
+                        <td class="td-border-none"> <input type="text">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="home-list-box">
+                <table>
+                    <tr>
+                        <td class="td-border">
+                            <div class="num color5">5</div>
+                        </td>
+                        <td class="td-border"><span>10.00</span></td>
+                        <td class="td-border-none"> <input type="text">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="home-list-box">
+                <table>
+                    <tr>
+                        <td class="td-border">
+                            <div class="num color6">6</div>
+                        </td>
+                        <td class="td-border"><span>10.00</span></td>
+                        <td class="td-border-none"> <input type="text">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="home-list-box">
+                <table>
+                    <tr>
+                        <td class="td-border">
+                            <div class="num color7">7</div>
+                        </td>
+                        <td class="td-border"><span>10.00</span></td>
+                        <td class="td-border-none"> <input type="text">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="home-list-box">
+                <table>
+                    <tr>
+                        <td class="td-border">
+                            <div class="num color8">8</div>
+                        </td>
+                        <td class="td-border"><span>10.00</span></td>
+                        <td class="td-border-none"> <input type="text">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="home-list-box">
+                <table>
+                    <tr>
+                        <td class="td-border">
+                            <div class="num color9">9</div>
+                        </td>
+                        <td class="td-border"><span>10.00</span></td>
+                        <td class="td-border-none"> <input type="text">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="home-list-box">
+                <table>
+                    <tr>
+                        <td class="td-border">
+                            <div class="num color10">10</div>
+                        </td>
+                        <td class="td-border"><span>10.00</span></td>
+                        <td class="td-border-none"> <input type="text">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="home-list">
+            <div class="home-list-title">
+                <span>第四名</span>
+            </div>
+            <div class="home-list-box">
+                <table>
+                    <tr>
+                        <td class="td-border">
+                            <div class="num color1">1</div>
+                        </td>
+                        <td class="td-border"><span>10.00</span></td>
+                        <td> <input type="text">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="home-list-box">
+                <table>
+                    <tr>
+                        <td class="td-border">
+                            <div class="num color2">2</div>
+                        </td>
+                        <td class="td-border"><span>10.00</span></td>
+                        <td class="td-border-none"> <input type="text">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="home-list-box">
+                <table>
+                    <tr>
+                        <td class="td-border">
+                            <div class="num color3">3</div>
+                        </td>
+                        <td class="td-border"><span>10.00</span></td>
+                        <td class="td-border-none"> <input type="text">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="home-list-box">
+                <table>
+                    <tr>
+                        <td class="td-border">
+                            <div class="num color4">4</div>
+                        </td>
+                        <td class="td-border"><span>10.00</span></td>
+                        <td class="td-border-none"> <input type="text">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="home-list-box">
+                <table>
+                    <tr>
+                        <td class="td-border">
+                            <div class="num color5">5</div>
+                        </td>
+                        <td class="td-border"><span>10.00</span></td>
+                        <td class="td-border-none"> <input type="text">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="home-list-box">
+                <table>
+                    <tr>
+                        <td class="td-border">
+                            <div class="num color6">6</div>
+                        </td>
+                        <td class="td-border"><span>10.00</span></td>
+                        <td class="td-border-none"> <input type="text">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="home-list-box">
+                <table>
+                    <tr>
+                        <td class="td-border">
+                            <div class="num color7">7</div>
+                        </td>
+                        <td class="td-border"><span>10.00</span></td>
+                        <td class="td-border-none"> <input type="text">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="home-list-box">
+                <table>
+                    <tr>
+                        <td class="td-border">
+                            <div class="num color8">8</div>
+                        </td>
+                        <td class="td-border"><span>10.00</span></td>
+                        <td class="td-border-none"> <input type="text">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="home-list-box">
+                <table>
+                    <tr>
+                        <td class="td-border">
+                            <div class="num color9">9</div>
+                        </td>
+                        <td class="td-border"><span>10.00</span></td>
+                        <td class="td-border-none"> <input type="text">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="home-list-box">
+                <table>
+                    <tr>
+                        <td class="td-border">
+                            <div class="num color10">10</div>
+                        </td>
+                        <td class="td-border"><span>10.00</span></td>
+                        <td class="td-border-none"> <input type="text">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="home-list">
+            <div class="home-list-title">
+                <span>第五名</span>
+            </div>
+            <div class="home-list-box">
+                <table>
+                    <tr>
+                        <td class="td-border">
+                            <div class="num color1">1</div>
+                        </td>
+                        <td class="td-border"><span>10.00</span></td>
+                        <td class="td-border-none"> <input type="text">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="home-list-box">
+                <table>
+                    <tr>
+                        <td class="td-border">
+                            <div class="num color2">2</div>
+                        </td>
+                        <td class="td-border"><span>10.00</span></td>
+                        <td class="td-border-none"> <input type="text">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="home-list-box">
+                <table>
+                    <tr>
+                        <td class="td-border">
+                            <div class="num color3">3</div>
+                        </td>
+                        <td class="td-border"><span>10.00</span></td>
+                        <td class="td-border-none"> <input type="text">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="home-list-box">
+                <table>
+                    <tr>
+                        <td class="td-border">
+                            <div class="num color4">4</div>
+                        </td>
+                        <td class="td-border"><span>10.00</span></td>
+                        <td class="td-border-none"> <input type="text">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="home-list-box">
+                <table>
+                    <tr>
+                        <td class="td-border">
+                            <div class="num color5">5</div>
+                        </td>
+                        <td class="td-border"><span>10.00</span></td>
+                        <td class="td-border-none"> <input type="text">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="home-list-box">
+                <table>
+                    <tr>
+                        <td class="td-border">
+                            <div class="num color6">6</div>
+                        </td>
+                        <td class="td-border"><span>10.00</span></td>
+                        <td class="td-border-none"> <input type="text">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="home-list-box">
+                <table>
+                    <tr>
+                        <td class="td-border">
+                            <div class="num color7">7</div>
+                        </td>
+                        <td class="td-border"><span>10.00</span></td>
+                        <td class="td-border-none"> <input type="text">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="home-list-box">
+                <table>
+                    <tr>
+                        <td class="td-border">
+                            <div class="num color8">8</div>
+                        </td>
+                        <td class="td-border"><span>10.00</span></td>
+                        <td class="td-border-none"> <input type="text">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="home-list-box">
+                <table>
+                    <tr>
+                        <td class="td-border">
+                            <div class="num color9">9</div>
+                        </td>
+                        <td class="td-border"><span>10.00</span></td>
+                        <td class="td-border-none"> <input type="text">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="home-list-box">
+                <table>
+                    <tr>
+                        <td class="td-border">
+                            <div class="num color10">10</div>
+                        </td>
+                        <td class="td-border"><span>10.00</span></td>
+                        <td class="td-border-none"> <input type="text">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="home-list ">
+            <div class="home-list-title">
+                <span>第六名</span>
+            </div>
+            <div class="home-list-box">
+                <table>
+                    <tr>
+                        <td class="td-border">
+                            <div class="num color1">1</div>
+                        </td>
+                        <td class="td-border"><span>10.00</span></td>
+                        <td class="td-border-none"> <input type="text">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="home-list-box">
+                <table>
+                    <tr>
+                        <td class="td-border">
+                            <div class="num color2">2</div>
+                        </td>
+                        <td class="td-border"><span>10.00</span></td>
+                        <td class="td-border-none"> <input type="text">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="home-list-box">
+                <table>
+                    <tr>
+                        <td class="td-border">
+                            <div class="num color3">3</div>
+                        </td>
+                        <td class="td-border"><span>10.00</span></td>
+                        <td class="td-border-none"> <input type="text">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="home-list-box">
+                <table>
+                    <tr>
+                        <td class="td-border">
+                            <div class="num color4">4</div>
+                        </td>
+                        <td class="td-border"><span>10.00</span></td>
+                        <td class="td-border-none"> <input type="text">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="home-list-box">
+                <table>
+                    <tr>
+                        <td class="td-border">
+                            <div class="num color5">5</div>
+                        </td>
+                        <td class="td-border"><span>10.00</span></td>
+                        <td class="td-border-none"> <input type="text">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="home-list-box">
+                <table>
+                    <tr>
+                        <td class="td-border">
+                            <div class="num color6">6</div>
+                        </td>
+                        <td class="td-border"><span>10.00</span></td>
+                        <td class="td-border-none"> <input type="text">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="home-list-box">
+                <table>
+                    <tr>
+                        <td class="td-border">
+                            <div class="num color7">7</div>
+                        </td>
+                        <td class="td-border"><span>10.00</span></td>
+                        <td class="td-border-none"> <input type="text">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="home-list-box">
+                <table>
+                    <tr>
+                        <td class="td-border">
+                            <div class="num color8">8</div>
+                        </td>
+                        <td class="td-border"><span>10.00</span></td>
+                        <td class="td-border-none"> <input type="text">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="home-list-box">
+                <table>
+                    <tr>
+                        <td class="td-border">
+                            <div class="num color9">9</div>
+                        </td>
+                        <td class="td-border"><span>10.00</span></td>
+                        <td class="td-border-none"> <input type="text">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="home-list-box">
+                <table>
+                    <tr>
+                        <td class="td-border">
+                            <div class="num color10">10</div>
+                        </td>
+                        <td class="td-border"><span>10.00</span></td>
+                        <td class="td-border-none"> <input type="text">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="home-list ">
+            <div class="home-list-title">
+                <span>第七名</span>
+            </div>
+            <div class="home-list-box">
+                <table>
+                    <tr>
+                        <td class="td-border">
+                            <div class="num color1">1</div>
+                        </td>
+                        <td class="td-border"><span>10.00</span></td>
+                        <td class="td-border-none"> <input type="text">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="home-list-box">
+                <table>
+                    <tr>
+                        <td class="td-border">
+                            <div class="num color2">2</div>
+                        </td>
+                        <td class="td-border"><span>10.00</span></td>
+                        <td class="td-border-none"> <input type="text">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="home-list-box">
+                <table>
+                    <tr>
+                        <td class="td-border">
+                            <div class="num color3">3</div>
+                        </td>
+                        <td class="td-border"><span>10.00</span></td>
+                        <td class="td-border-none"> <input type="text">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="home-list-box">
+                <table>
+                    <tr>
+                        <td class="td-border">
+                            <div class="num color4">4</div>
+                        </td>
+                        <td class="td-border"><span>10.00</span></td>
+                        <td class="td-border-none"> <input type="text">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="home-list-box">
+                <table>
+                    <tr>
+                        <td class="td-border">
+                            <div class="num color5">5</div>
+                        </td>
+                        <td class="td-border"><span>10.00</span></td>
+                        <td class="td-border-none"> <input type="text">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="home-list-box">
+                <table>
+                    <tr>
+                        <td class="td-border">
+                            <div class="num color6">6</div>
+                        </td>
+                        <td class="td-border"><span>10.00</span></td>
+                        <td class="td-border-none"> <input type="text">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="home-list-box">
+                <table>
+                    <tr>
+                        <td class="td-border">
+                            <div class="num color7">7</div>
+                        </td>
+                        <td class="td-border"><span>10.00</span></td>
+                        <td class="td-border-none"> <input type="text">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="home-list-box">
+                <table>
+                    <tr>
+                        <td class="td-border">
+                            <div class="num color8">8</div>
+                        </td>
+                        <td class="td-border"><span>10.00</span></td>
+                        <td class="td-border-none"> <input type="text">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="home-list-box">
+                <table>
+                    <tr>
+                        <td class="td-border">
+                            <div class="num color9">9</div>
+                        </td>
+                        <td class="td-border"><span>10.00</span></td>
+                        <td class="td-border-none"> <input type="text">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="home-list-box">
+                <table>
+                    <tr>
+                        <td class="td-border">
+                            <div class="num color10">10</div>
+                        </td>
+                        <td class="td-border"><span>10.00</span></td>
+                        <td class="td-border-none"> <input type="text">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="home-list ">
+            <div class="home-list-title">
+                <span>第八名</span>
+            </div>
+            <div class="home-list-box">
+                <table>
+                    <tr>
+                        <td class="td-border">
+                            <div class="num color1">1</div>
+                        </td>
+                        <td class="td-border"><span>10.00</span></td>
+                        <td class="td-border-none"> <input type="text">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="home-list-box">
+                <table>
+                    <tr>
+                        <td class="td-border">
+                            <div class="num color2">2</div>
+                        </td>
+                        <td class="td-border"><span>10.00</span></td>
+                        <td class="td-border-none"> <input type="text">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="home-list-box">
+                <table>
+                    <tr>
+                        <td class="td-border">
+                            <div class="num color3">3</div>
+                        </td>
+                        <td class="td-border"><span>10.00</span></td>
+                        <td class="td-border-none"> <input type="text">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="home-list-box">
+                <table>
+                    <tr>
+                        <td class="td-border">
+                            <div class="num color4">4</div>
+                        </td>
+                        <td class="td-border"><span>10.00</span></td>
+                        <td class="td-border-none"> <input type="text">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="home-list-box">
+                <table>
+                    <tr>
+                        <td class="td-border">
+                            <div class="num color5">5</div>
+                        </td>
+                        <td class="td-border"><span>10.00</span></td>
+                        <td class="td-border-none"> <input type="text">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="home-list-box">
+                <table>
+                    <tr>
+                        <td class="td-border">
+                            <div class="num color6">6</div>
+                        </td>
+                        <td class="td-border"><span>10.00</span></td>
+                        <td class="td-border-none"> <input type="text">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="home-list-box">
+                <table>
+                    <tr>
+                        <td class="td-border">
+                            <div class="num color7">7</div>
+                        </td>
+                        <td class="td-border"><span>10.00</span></td>
+                        <td class="td-border-none"> <input type="text">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="home-list-box">
+                <table>
+                    <tr>
+                        <td class="td-border">
+                            <div class="num color8">8</div>
+                        </td>
+                        <td class="td-border"><span>10.00</span></td>
+                        <td class="td-border-none"> <input type="text">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="home-list-box">
+                <table>
+                    <tr>
+                        <td class="td-border">
+                            <div class="num color9">9</div>
+                        </td>
+                        <td class="td-border"><span>10.00</span></td>
+                        <td class="td-border-none"> <input type="text">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="home-list-box">
+                <table>
+                    <tr>
+                        <td class="td-border">
+                            <div class="num color10">10</div>
+                        </td>
+                        <td class="td-border"><span>10.00</span></td>
+                        <td class="td-border-none"> <input type="text">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="home-list ">
+            <div class="home-list-title">
+                <span>第九名</span>
+            </div>
+            <div class="home-list-box">
+                <table>
+                    <tr>
+                        <td class="td-border">
+                            <div class="num color1">1</div>
+                        </td>
+                        <td class="td-border"><span>10.00</span></td>
+                        <td class="td-border-none"> <input type="text">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="home-list-box">
+                <table>
+                    <tr>
+                        <td class="td-border">
+                            <div class="num color2">2</div>
+                        </td>
+                        <td class="td-border"><span>10.00</span></td>
+                        <td class="td-border-none"> <input type="text">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="home-list-box">
+                <table>
+                    <tr>
+                        <td class="td-border">
+                            <div class="num color3">3</div>
+                        </td>
+                        <td class="td-border"><span>10.00</span></td>
+                        <td class="td-border-none"> <input type="text">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="home-list-box">
+                <table>
+                    <tr>
+                        <td class="td-border">
+                            <div class="num color4">4</div>
+                        </td>
+                        <td class="td-border"><span>10.00</span></td>
+                        <td class="td-border-none"> <input type="text">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="home-list-box">
+                <table>
+                    <tr>
+                        <td class="td-border">
+                            <div class="num color5">5</div>
+                        </td>
+                        <td class="td-border"><span>10.00</span></td>
+                        <td class="td-border-none"> <input type="text">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="home-list-box">
+                <table>
+                    <tr>
+                        <td class="td-border">
+                            <div class="num color6">6</div>
+                        </td>
+                        <td class="td-border"><span>10.00</span></td>
+                        <td class="td-border-none"> <input type="text">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="home-list-box">
+                <table>
+                    <tr>
+                        <td class="td-border">
+                            <div class="num color7">7</div>
+                        </td>
+                        <td class="td-border"><span>10.00</span></td>
+                        <td class="td-border-none"> <input type="text">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="home-list-box">
+                <table>
+                    <tr>
+                        <td class="td-border">
+                            <div class="num color8">8</div>
+                        </td>
+                        <td class="td-border"><span>10.00</span></td>
+                        <td class="td-border-none"> <input type="text">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="home-list-box">
+                <table>
+                    <tr>
+                        <td class="td-border">
+                            <div class="num color9">9</div>
+                        </td>
+                        <td class="td-border"><span>10.00</span></td>
+                        <td class="td-border-none"> <input type="text">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="home-list-box">
+                <table>
+                    <tr>
+                        <td class="td-border">
+                            <div class="num color10">10</div>
+                        </td>
+                        <td class="td-border"><span>10.00</span></td>
+                        <td class="td-border-none"> <input type="text">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="home-list ">
+            <div class="home-list-title">
+                <span>第十名</span>
+            </div>
+            <div class="home-list-box">
+                <table>
+                    <tr>
+                        <td class="td-border">
+                            <div class="num color1">1</div>
+                        </td>
+                        <td class="td-border"><span>10.00</span></td>
+                        <td class="td-border-none"> <input type="text">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="home-list-box">
+                <table>
+                    <tr>
+                        <td class="td-border">
+                            <div class="num color2">2</div>
+                        </td>
+                        <td class="td-border"><span>10.00</span></td>
+                        <td class="td-border-none"> <input type="text">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="home-list-box">
+                <table>
+                    <tr>
+                        <td class="td-border">
+                            <div class="num color3">3</div>
+                        </td>
+                        <td class="td-border"><span>10.00</span></td>
+                        <td class="td-border-none"> <input type="text">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="home-list-box">
+                <table>
+                    <tr>
+                        <td class="td-border">
+                            <div class="num color4">4</div>
+                        </td>
+                        <td class="td-border"><span>10.00</span></td>
+                        <td class="td-border-none"> <input type="text">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="home-list-box">
+                <table>
+                    <tr>
+                        <td class="td-border">
+                            <div class="num color5">5</div>
+                        </td>
+                        <td class="td-border"><span>10.00</span></td>
+                        <td class="td-border-none"> <input type="text">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="home-list-box">
+                <table>
+                    <tr>
+                        <td class="td-border">
+                            <div class="num color6">6</div>
+                        </td>
+                        <td class="td-border"><span>10.00</span></td>
+                        <td class="td-border-none"> <input type="text">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="home-list-box">
+                <table>
+                    <tr>
+                        <td class="td-border">
+                            <div class="num color7">7</div>
+                        </td>
+                        <td class="td-border"><span>10.00</span></td>
+                        <td class="td-border-none"> <input type="text">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="home-list-box">
+                <table>
+                    <tr>
+                        <td class="td-border">
+                            <div class="num color8">8</div>
+                        </td>
+                        <td class="td-border"><span>10.00</span></td>
+                        <td class="td-border-none"> <input type="text">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="home-list-box">
+                <table>
+                    <tr>
+                        <td class="td-border">
+                            <div class="num color9">9</div>
+                        </td>
+                        <td class="td-border"><span>10.00</span></td>
+                        <td class="td-border-none"> <input type="text">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="home-list-box">
+                <table>
+                    <tr>
+                        <td class="td-border">
+                            <div class="num color10">10</div>
+                        </td>
+                        <td class="td-border"><span>10.00</span></td>
+                        <td class="td-border-none"> <input type="text">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        </div>
+    </div>
+	<div class="pop">
+		<h1 class="pop-tit">下单明细（请确认投注）</h1>
+		<div class="pop-tab">
+			<table border="1" cellspacing="0" class="pop-mid">
+				<tr class="pop-tr">
+					<th>
+						号码
+					</th>
+					<th>
+						赔率
+					</th>
+					<th>
+						金额
+					</th>
+				</tr>
+				<table class="inner" border="1" cellspacing="0">
+				<tr >
+					<td>
+					2
+					</td>
+					<td>
+					16
+					</td>
+					<td>
+					1
+					</td>
+				</tr>
+				</table>
+			</table>
+		</div>
+		<div class="pop-btn">
+			<button class="pop-btn1" onClick="po_hid()" >确认</button>
+			<button class="pop-btn2" onClick="po_hid()">取消</button>
+		</div>
+	</div>
+</body>
+
+
+<script>
+	// 确定投注
+
+function sure() {	
+	
+	
+	htm='';
+	$('.home-list').each(function(){
+	var tit=$(this).find('.home-list-title').text();
+	$(this).find('.selected').each(function(){
+	var num=$(this).find('.num').text();
+	var cent=$(this).find('.td-border span').text();
+	var val=$(this).find('input').val();
+	htm+='<tr><td>'+tit+'&nbsp;'+num+'</td><td>'+cent+'</td><td>'+val+'</td></tr>';
+			
+	})
+	
+	})
+
+	
+	$('.pop').show()	
+	
+	$('.inner').html(htm);
+	
+}
+
+	function po_hid(){
+	$('.pop').hide();
+	}
+
+	//选中input 阻止冒泡事件  
+	$('.home-list-box').find('input').click(function(){
+		if($(this).parents().hasClass('selected')){
+		return false;
+		}
+	})
+    
+    // 选中事件 添加样式
+$(function(){
+    $(".home-list-box").click(function() {
+	
+	 if($(this).hasClass("selected")){
+          $(this).removeClass("selected");
+          $(this).find("input").val('');
+	  }
+	  else{
+	  		$(this).find('input').focus();
+             $(this).addClass("selected");
+             var inp=$(".home-top-input").val();
+             $(this).find("input").val(inp);
+         }
+    });
+
+}); 
+
+// 根据输入框的值进行更新投注金额
+function upda(){
+     var inp=$(".home-top-input").val();
+      $(".selected input").val(inp);
+}
+
+
+</script>
+
+</html>

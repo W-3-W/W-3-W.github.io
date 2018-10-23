@@ -1,0 +1,40 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>在线充值</title>
+	<link type="text/css" rel="stylesheet" href="CSS/style.css">
+    <script src="JS/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="JS/layui-v2.3.0/layui/layui.all.js"></script>
+
+</head>
+<body>
+<div class="pubpage"></div>
+<div class="account-box">
+    <div class="account-msg">
+        <div class="account-content">
+            <div class="account-title"><span>充值金额：</span></div>
+            <input type="text" class="acconut-input" >
+        </div>
+        <input class="submit-btn" value="提交" type="button" onClick="accountSubmit()" >
+    </div>
+
+
+
+</div>
+</body>
+<script>
+    $(function(){
+       
+    })
+
+    function accountSubmit() {
+        var account =$(".acconut-input").val();
+        if(account==""){
+            layer.msg("请输入充值金额")
+        }else {
+            layer.msg("提交成功")
+        }
+    }
+</script>
+</html>

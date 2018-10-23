@@ -1,0 +1,71 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>成员开户</title>
+<link type="text/css" rel="stylesheet" href="CSS/style.css">
+<link type="text/css" rel="stylesheet" href="JS/layui-v2.3.0/layui/css/layui.css">
+ <script src="JS/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="JS/layui-v2.3.0/layui/layui.all.js"></script>
+
+</head>
+<body>
+<div class="pubpage"></div>
+<div class="account-box">
+    <div class="account-msg">
+        <div class="account-content">
+           <div class="account-title" ><span>用户名：</span></div>
+            <input type="text" class="acconut-input" id="username">
+        </div>
+        <div class="account-content">
+            <div class="account-title" ><span>密码：</span></div>
+            <input type="text" class="acconut-input" id="password">
+        </div>
+        <!--<div class="account-content">-->
+            <!--<div class="account-title" ><span>QQ：</span></div>-->
+            <!--<input type="text" class="acconut-input" id="qqnumber">-->
+        <!--</div>-->
+        <div class="account-content">
+            <div class="account-title" ><span>亏损分红：</span></div>
+            <input type="number" class="loss-input" placeholder="请输入亏损分红~" id="lossnumber">
+            <span class="account-perecent">%</span>
+            <img src="images/up.png" class="account-img">
+            <img src="images/down.png"  class="account-img">
+        </div>
+        <input class="submit-btn" value="提交" type="button" onClick="openAccount()">
+    </div>
+
+</div>
+</body>
+
+<script>
+    $(function(){
+        
+    });
+
+    function openAccount() {
+        var username=$("#username").val();
+        var password=$("#password").val();
+        var qqnumber=$("#qqnumber").val();
+        var lossnumber=$("#lossnumber").val();
+
+        if(username==""){
+            layer.msg("请输入用户名")
+            // return false;
+            // alert("请输入用户名")
+        }
+        else  if(password==""){
+            layer.msg("请输入密码")
+        }
+       else if(qqnumber==""){
+            layer.msg("请输入QQ号")
+        }
+        else if(lossnumber==""){
+            layer.msg("请输入亏损分红")
+        }
+        else {
+            layer.msg("提交成功！")
+        }
+    }
+</script>
+</html>

@@ -1,0 +1,70 @@
+/* CSS Document */
+*{ margin:0;  padding:0;}
+body{ background-color:#F3F4F5;}
+ul,li{ padding:0;margin:0;list-style:none}
+a{ 
+	text-decoration:none; 
+	color:#333; 
+} 
+.headbg{ background-image:url(../../public/img/head_bg.png);  width:100%; height:120px; min-width:1620px;}
+.head_logo{ float:left; margin-left:28px; margin-top:6px;}
+.head_title{ font-size:32px; font-weight:bold; color:#FFDD08; padding-top:26px; padding-left:15px; float:left;}
+.head_date{padding-top:31px; padding-left:30px; float:left; color:#FFFFFF; font-size:18px; font-family: PingFangSC-Semibold; letter-spacing:1.5px; }
+.float_left{ float:left; }
+.head_num{ margin-left:30px; margin-top:13px;}
+.head_num li{ float:left; margin-right:22px; width:35px; height:35px;  text-align:center; line-height:35px; color:#FFFFFF;}
+.head_ani{ margin-left:30px; margin-top:63px;}
+.head_ani li{ float:left; width:61px; height:30px; text-align:center; line-height:30px; border:1px solid #FFFFFF; margin-right:6.8px; color:#FFFFFF;}
+.bg_orangered{background: #FF7878;}
+.bg_yellow{background: #FFC363;}
+.bg_green{background: #34A976;;}
+.bg_blue{background: #4A90E2;}
+.bg_purple{background: #6B28E3;}
+.bg_kermesinus{background: #7E2370;}
+.bg_prasinous{background: #B8E986;}
+.bg_golden{background: #F8E71C;}
+.bg_buff{background: #F5A623;}
+.bg_black{background: #000000;}
+.log_out{ margin-left:1388px; padding-top:12px; overflow:hidden; cursor:pointer; color:#FFFFFF;}
+.head_notic{ margin-left:1436px; padding-top:20px;}
+.head_size{width:57px; height:25px; cursor:pointer;}
+.nav_nav{ width:180px; text-align:center;     float: left;}
+.nav_main{ height:62px; line-height:62px; background:#3052B3; color:#FFDD08; font-weight:bold; font-size:16px;}
+.nav_part{  font-size: 15px; height:41px; line-height:41px; background:#2B3D73; color:#FFFFFF; font-weight:16px;}
+.nav_bottom{ height:100px; background-color:#3052B3; width:239px;}
+.nav_part:hover{ cursor:pointer; background-color:#7189CE;}
+.color_point{background-color:#7189CE;}
+
+<!---------------------------notic--------------------------------->
+
+#view{ cursor:pointer;}
+table th,td { border:1px solid #D9D9D9;}
+.body_width{min-width:1400px}
+#notic{position:fixed; width:100%; height:100%; opacity:0.5; display:none;}
+.hide_part{position:absolute;width:775px; height:192px; background-color:#FFFFFF; top:40%; left:50%; margin:-96px 0 0 -388px;box-shadow: 0 4px 12px 0 rgba(0,0,0,0.15);}
+#close_pop{right:25px; top:25px; position:absolute; cursor:pointer;}
+.notic_tit{font-size:16px; margin-left:24px; color:#000000;     margin-top: 25px;}
+.notic_main{margin-left:24px; margin-right:50px; margin-top:25px;}
+.notic_table{text-align:center; width:1150px; height:100px; border:1px solid #D9D9D9; border-collapse:collapse;margin: 40px 0 20px 20px;float: left; }
+.tab_tr{background-color:#E4E4E4; color:#4A90E2; font-size:18px;}
+.tab_trr{font-size:16px; font-weight:bold;}
+#view{ cursor:pointer;}
+.notic_btn{width:1150px; text-align:center; margin-top:52px;float: left;}
+.btn_first{width:63px; height:29px; margin-right:25px; border:1px solid #D9D9D9; background-color:#FFFFFF; border-radius:6px;}
+.btn_back{width:71px; height:29px; margin-right:9px;	 border:1px solid #D9D9D9; background-color:#FFFFFF;	border-radius:6px;}
+.btn_one{width:44px; height:29px; margin-right:9px;	 border:1px solid #1576DE; background-color:#1576DE;	border-radius:6px;}
+.btn_next{width:72px; height:29px; margin-right:25px;	 border:1px solid #D9D9D9; background-color:#FFFFFF;	border-radius:6px;}
+.btn_last{width:64px; height:29px; margin-right:39px;  border:1px solid #D9D9D9; background-color:#FFFFFF;	border-radius:6px;}
+.btn_page{font-size:14px; font-family:PingFangSC-Medium;}
+
+
+
+
+
+
+
+
+
+
+
+

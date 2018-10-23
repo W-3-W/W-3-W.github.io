@@ -1,0 +1,68 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>公告</title>
+<link rel="stylesheet" href="CSS/public.css">
+
+
+<script src="JS/jquery-1.9.1.min.js"></script>
+</head>
+
+<body class="body_width">
+<div class="pubpage"></div>
+
+<!----------------------------弹窗------------------------------------------->
+
+
+	<div id="notic">
+		<div class="hide_part">
+			<img id="close_pop" src="images/clo.png" width="11px" height="11px">
+			<h1 class="notic_tit">充值卡更新</h1>
+			<p class="notic_main">此处是一条通知提醒，衬衫的价格是九磅十五便士，所以你选择B选项。 衬衫的价格是九磅十五便士，所以你选择B选项。 </p>
+		</div>
+	</div>
+	
+	
+	
+	<!--------------------------------表单------------------------------>
+
+
+<table border="1" cellspacing="0px" class="notic_table"> 
+ <tr class="tab_tr">
+ 	<th>编号</th>
+	<th>公告标题</th>
+	<th>发布时间</th>
+	<th>操作</th>
+ </tr>
+  <tr class="tab_trr">
+ 	<td>1</th>
+	<td>充值卡更新</th>
+	<td>2019-09-09 23:12:12</th>
+	<td id="view">查看</th>
+ </tr>
+</table>
+<div class="notic_btn">
+<input type="button" value="首页" class="btn_first"/>
+<input type="button" value="上一页" class="btn_back"   />
+<input type="button" value="1"  class="btn_one"/>
+<input type="button"  value="下一页" class="btn_next" />
+<input type="button"  value="尾页" class="btn_last"/>
+<span  class="btn_page">第1页/共1页</span>
+</div>
+
+
+</body>
+<script language="javascript">
+    $(function(){
+       
+
+    });
+
+	$("#view").click(function(){
+	$("#notic").show();
+	});
+	$("#close_pop").click(function(){
+	$("#notic").hide();
+	});	
+</script>
+</html>

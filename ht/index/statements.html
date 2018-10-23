@@ -1,0 +1,128 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>财务报表</title>
+	<link type="text/css" rel="stylesheet" href="CSS/style.css">
+	<link type="text/css" rel="stylesheet" href="CSS/index.css">
+	<link type="text/css" rel="stylesheet" href="JS/layui-v2.3.0/layui/css/layui.css">
+    <script src="JS/jquery-1.9.1.min.js"></script>
+     <script type="text/javascript" src="{$TMPL}/JS/layui-v2.3.0/layui/layui.js"></script>
+
+</head>
+<body>
+<div class="pubpage"></div>
+<div class="prize-box">
+    <div class="prize-msg fl">
+        <div class="statements-btn">钱包余额: ￥0.00</div>
+        <div class="statements-btn">冻结余额: ￥0.00</div>
+        <div class="statements-btn">可提现余额: ￥0.00</div>
+
+        <div class="history-detail">
+            <table class="layui-table">
+                <thead>
+                <tr>
+                    <th> <input type="text" class="history-input" id="time" placeholder="请选择历史时间~"></th>
+                    <th>历史战况</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>充值金额</td>
+                    <td>0.00</td>
+                </tr>
+                <tr>
+                    <td>提现金额</td>
+                    <td>0.00</td>
+                </tr>
+                <tr>
+                    <td>消费金额</td>
+                    <td>0.00</td>
+                </tr>
+                <tr>
+                    <td>盈亏</td>
+                    <td>0.00</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="rode">
+            <div class="rode-name">快车道</div>
+            <div class="rode-progress">
+                <div class="show-progress">
+                    <div class="layui-progress layui-progress-big " lay-showPercent="true"style="border-radius: 0px;height: 38px" >
+                        <div class="layui-progress-bar layui-bg-blue" lay-percent="10%" style="border-radius: 0px;height: 38px" ></div>
+                    </div>
+                </div>
+                <div class="freeze-btn">冻结</div>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="prize-msg fl">
+        <div class="history-detail">
+            <div class="today-detail">
+                今日战况
+            </div>
+            <table class="layui-table" style="  margin-top: -10px;">
+
+                <tbody>
+                <tr>
+                    <td>充值金额</td>
+                    <td>0.00</td>
+                </tr>
+                <tr>
+                    <td>提现金额</td>
+                    <td>0.00</td>
+                </tr>
+                <tr>
+                    <td>消费金额</td>
+                    <td>0.00</td>
+                </tr>
+                <tr>
+                    <td>盈亏</td>
+                    <td>0.00</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="rode slow-rode">
+            <div class="rode-name">慢车道</div>
+            <div class="rode-progress">
+                <div class="show-progress">
+                    <div class="layui-progress layui-progress-big " lay-showPercent="true"style="border-radius: 0px;height: 38px" >
+                        <div class="layui-progress-bar layui-bg-blue" lay-percent="20%" style="border-radius: 0px;height: 38px" ></div>
+                    </div>
+                </div>
+                <div class="freeze-btn">领取</div>
+            </div>
+
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
+
+<link rel="stylesheet" href="js/layui-v2.3.0/layui/css/layui.css">
+<script src="js/layui-v2.3.0/layui/layui.js"></script>
+<script>
+    $(function(){
+       
+
+    })
+
+    layui.use('laydate', function(){
+        var laydate = layui.laydate;
+
+//执行一个laydate实例
+        laydate.render({
+            elem: '#time' //指定元素
+        });
+    });
+
+    layui.use('element', function(){
+        var element = layui.element;
+    });
+</script>

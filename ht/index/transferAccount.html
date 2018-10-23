@@ -1,0 +1,55 @@
+
+<html lang="en">
+
+<head>
+    <link type="text/css" rel="stylesheet" href="CSS/style.css">
+    <script src="JS/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="JS/layui-v2.3.0/layui/layui.all.js"></script>
+    <meta charset="UTF-8">
+    <title>我要转账</title>
+</head>
+<body>
+<div class="pubpage"></div>
+<div class="account-box">
+    <div class="account-msg">
+        <div class="account-content">
+            <div class="account-title"><span>可转账金额：</span></div>
+            <input type="text" class="acconut-input" id="money">
+        </div>
+        <div class="account-content">
+            <div class="account-title"><span>对方用户名：</span></div>
+            <input type="text" class="acconut-input" id="name">
+        </div>
+        <div class="account-content">
+            <div class="account-title"><span>转账金额：</span></div>
+            <input type="text" class="acconut-input" id="transferNum">
+        </div>
+        <input class="submit-btn" value="提交" type="button" onClick="transferAccount()">
+    </div>
+
+
+</div>
+</body>
+<script>
+
+ 
+    function transferAccount() {
+        var money=$("#money").val();
+        var name=$("#name").val();
+        var transferNum=$("#transferNum").val();
+
+        if(money==""){
+            layer.msg("请输入可转账金额")
+        }
+        else  if(name==""){
+            layer.msg("请输入对方用户名")
+        }
+        else if(transferNum==""){
+            layer.msg("请输入转账金额")
+        }
+        else {
+            layer.msg("提交成功！")
+        }
+    }
+</script>
+</html>
