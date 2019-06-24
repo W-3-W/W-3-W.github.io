@@ -121,24 +121,24 @@ a{
 .bott{
 	position: fixed;
     width: 100vw;
-    height: 66px;
+    height: 36px;
     background-color: #fb5b65;
     bottom: 0;
 	text-align: center;
-	line-height: 66px;
+	line-height: 36px;
 	color:#FFFFFF;
-	font-size: 22px;
+	font-size: 16px;
 
 }
 .bot1{
 	width:50vw;
-	height:66px;
+	height:36px;
 	float:left;
 
 }
 .bot2{
 	width:50vw;
-	height:66px;
+	height:36px;
 	float:left;
 
 }
