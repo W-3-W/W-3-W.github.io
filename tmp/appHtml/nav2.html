@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>个人中心</title>
+    <script type="text/javascript">
+        var root_dir = "appHtml";
+        var curPath = document.location.href;
+        var file = curPath.split('/')[curPath.split('/').length - 1];
+        var jsFile = file.split('.')[0] + ".js";
+        var pos = curPath.indexOf(root_dir);
+        basePath = curPath.substr(0, pos);
+        document.write("<base href=" + basePath + "/ >");
+    </script>
+
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../static/css/index.css" />
+	<link rel="stylesheet" type="text/css"  href="../static/css/nav.css"/>
+    <script src="../static/js/bin/res-bin.js"></script>
+    <script src="../static/js/plug/res-plug.js"></script>
+    <script src="../static/js/page/index.js"></script>
+</head>
+
+
+<body>
+    <div class="index-main" id="wxApp">
+        <!-- 头部 开始 -->
+        <div class="nav-head head">
+             <span class="head-goback" @click="handleBack"></span>
+            <span></span>
+            <img class="head-menu" @click="logoutVisible = true" src="../static/img/menu2.png" alt="">
+        </div>
+        <!-- 头部 结束 -->
+		
+        <!-- 内容 开始 -->
+
+        <div class="content">
+			<div class="headimg">
+				<img src="../static/img/tx_03.png">
+			</div>
+           	<div class="nav-nam">
+				土豆炖地瓜
+			</div>
+			<div class="nav-phone">
+				137****0943
+			</div>
+        </div>
+
+        <div class="popup-wrap" v-if="logoutVisible">
+            <div class="popup-main">
+                <div class="popup-header">
+                    <p class="popup-title">提示</p>
+                </div>
+                <p>是否退出当期登录账号？</p>
+                <div class="btn-group">
+                    <button class="btn btn-confirm" @click="handleLogout">确定</button>
+                    <button class="btn btn-cancel" @click="logoutVisible = false">取消</button>
+                </div>
+            </div>
+        </div>       
+        <!-- 内容 结束 -->
+		<div class="nav-bor">
+			<div class="navsmall" @click="handleToNav('personal data')">
+				<img src="../static/img/09-01.png"><br>个人资料
+			</div>
+			<div class="navsmall" @click="handleToNav('Customer service')">
+				<img src="../static/img/09-02.png"><br>联系客服
+			</div>
+			<div class="navsmall" @click="handleToNav('us')">
+				<img src="../static/img/09-03.png"><br>关于我们
+			</div>
+			<div class="navsmall" @click="handleToNav('password')">
+				<img src="../static/img/09-04.png"><br>修改密码
+			</div>
+			<div @click="logoutVisible = true" class="navsmall">
+					<img src="../static/img/09-05.png"><br>退出登录
+			</div>
+			
+
+		</div>
+		<div class="bott" >
+		<div  @click="handleToNav('index')" class="bot1" >
+			店铺主页
+		</div>
+		<div class="bot2">
+			个人中心
+		</div>
+	</div>
+    </div>
+
+    <script>
+        var wxApp = new Vue({
+            el: '#wxApp',
+            data: {
+                // 退出登录
+                logoutVisible: false,
+            },
+            methods: {
+                // 后退
+                handleBack: function () {
+                    AppUtil.Back();
+                },
+                handleToNav: function (nav) {
+                    AppUtil.GoUrl("appHtml/" + nav + ".html");
+                },
+                handleLogout: function () {
+                    AppUtil.GoUrl("appHtml/login.html");
+                },
+            }
+        });
+    </script>
+</body>
+
+</html>

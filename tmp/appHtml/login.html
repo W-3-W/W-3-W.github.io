@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>登录</title>
+    <script type="text/javascript">
+        var root_dir = "appHtml";
+        var curPath = document.location.href;
+        var file = curPath.split('/')[curPath.split('/').length - 1];
+        var jsFile = file.split('.')[0] + ".js";
+        var pos = curPath.indexOf(root_dir);
+        basePath = curPath.substr(0, pos);
+        document.write("<base href=" + basePath + "/ >");
+    </script>
+
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../static/css/login.css" />
+    <script src="../static/js/bin/res-bin.js"></script>
+    <script src="../static/js/plug/res-plug.js"></script>
+    <script src="../static/js/page/login.js"></script>
+</head>
+
+
+<body>
+	
+    <div class="login-main" id="wxApp">
+        <div class="head login-bg">
+			<img src="../static/img/leftpoint.png" class="login-point">	
+            <span>登录</span>
+        </div>
+
+        <div class="content">
+            <div class="title">请填写您的登陆信息</div>
+            <div class="form">
+                <ul>
+                    <li class="form-item">
+                        <input class="form-input" placeholder="请输入您的用户名" type="text" v-model="form.name">
+                    </li>
+                    <li class="form-item">
+                        <input class="form-input" placeholder="请输入您的密码" type="password" v-model="form.password">
+                    </li>
+                </ul>
+            </div>
+            <div class="btn-group">
+                <div class="btn" @click="handleLogin">登录</div>
+            </div>
+        </div>
+
+
+    </div>
+    <script>
+        var wxApp = new Vue({
+            el: '#wxApp',
+            data: {
+                /** 
+                 * 表单
+                */
+                form: {
+                    name: '',
+                    password: ''
+                }
+            },
+            methods: {
+                // 后退
+                handleBack: function () {
+                    AppUtil.Back();
+                },
+                // 跳转注册
+                handleToRegister: function () {
+                    AppUtil.GoUrl('appHtml/register.html');
+                },
+                // 登录
+                handleLogin: function () {
+                    var regNull = /\S/;
+                    if (!regNull.test(this.form.name)) {
+                        showToast("用户名为空", 2000, 'center');//提示错误信息
+                        return;
+                    }
+                    if (!regNull.test(this.form.password)) {
+                        showToast("密码为空", 2000, 'center');//提示错误信息
+                        return;
+                    }
+                    if (this.form.name !== 'admin') {
+                        showToast("用户名或密码错误，请重新输入", 2000, 'center');//提示错误信息
+                        return;
+                    }
+                    if (this.form.password !== '123456') {
+                        showToast("用户名或密码错误，请重新输入", 2000, 'center');//提示错误信息
+                        return;
+                    }
+
+                    AppUtil.PutVar({
+                        remaining1: parseInt(Math.random() * 60),
+                        remaining2: parseInt(Math.random() * 60)
+                    })
+
+                    AppUtil.GoUrl("appHtml/index.html");
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>

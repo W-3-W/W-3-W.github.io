@@ -1,0 +1,63 @@
+/* CSS Document */
+.nav-head{
+	background-image:url(../img/nav-bg.jpg);
+	background-size:100% 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+	height:100%;
+    padding-top: 30px;
+    line-height: 45px;
+    font-size: 17px;
+    text-align: center;
+    background-color: #fff;
+    color: #fff;
+    z-index: -1;;
+    letter-spacing: 6px;
+    padding-bottom: 3px;
+}
+.headimg{
+	
+	background-size: 100% 100%; 
+	width:100px;
+	height:100px; 
+	margin: 18px auto;
+}
+.nav-nam{
+	text-align:center;
+	color:#FFFFFF;
+	font-size: 16px;
+    margin-top: -16px;
+}
+.nav-phone{
+	width: 93px;
+    height: 20px;
+    background-color: #FFFFFF;
+    margin: 0 auto;
+    margin-top: 10px;
+    border-radius: 10px;
+	color:#fc6067;
+	font-size: 10px;
+    text-align: center;
+    line-height: 20px;
+}
+.nav-bor{
+	width: 83vw;
+    height: 220px;
+    background-color: white;
+    margin: 35px auto;
+	border-radius: 26px;
+	box-shadow:7px 6px 5px #f5cbce;
+}
+.nav-bor img{
+	width:60px;
+}
+.navsmall{
+		font-size: 13px;
+		width:33%;
+		height:110px;  
+		float:left; 
+		text-align:center;     
+		padding-top: 16px;
+}

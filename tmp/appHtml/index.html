@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>首页</title>
+    <script type="text/javascript">
+        var root_dir = "appHtml";
+        var curPath = document.location.href;
+        var file = curPath.split('/')[curPath.split('/').length - 1];
+        var jsFile = file.split('.')[0] + ".js";
+        var pos = curPath.indexOf(root_dir);
+        basePath = curPath.substr(0, pos);
+        document.write("<base href=" + basePath + "/ >");
+    </script>
+
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../static/css/index.css" />
+    <script src="../static/js/bin/res-bin.js"></script>
+    <script src="../static/js/plug/res-plug.js"></script>
+    <script src="../static/js/page/index.js"></script>
+</head>
+
+
+<body>
+    <div class="index-main" id="wxApp">
+        <!-- 头部 开始 -->
+        <div class="head">
+             <span class="head-goback" @click="handleBack"></span>
+            <span>店铺</span>
+            <img class="head-menu" @click="logoutVisible = true" src="../static/img/menu2.png" alt="">
+        </div>
+        <!-- 头部 结束 -->
+
+        <!-- 内容 开始 -->
+
+        <div class="content">
+			<div class="con-one">
+				<img src="../static/img/tit-lef.png" class="conone-img" >
+				营业数据
+			</div>
+			<div class="con-two">
+				<div class="border-num">67</div>
+				<div class="border-num">22</div>
+				<div class="border-wri">本周浏览量</div>
+				<div class="border-wri">今日访客数</div>
+				<div class="border-num">5</div>
+				<div class="border-num">617</div>
+				<div class="border-wri">今日订单量</div>
+				<div class="border-wri">总成交数量</div>
+			
+			</div>
+			<div class="con-one">
+				<img src="../static/img/tit-lef.png" class="conone-img" >
+				店铺管理
+			</div>
+			<div class="con-three">
+			
+				<div @click="handleToNav('order')" class="border-img">
+					<img src="../static/img/log1.png" style="width:50px;">
+				</div>
+	
+			
+				<div @click="handleToNav('Business Amount')" class="border-img">
+					<img src="../static/img/log2.png" style="width:50px;">
+				</div>
+	
+				
+				<div @click="handleToNav('order')" class="border-wri2">
+					全部订单
+				</div>
+		
+			
+				<div  @click="handleToNav('Business Amount')" class="border-wri2">
+					营业金额
+				</div>
+		
+			
+				<div @click="handleToNav('data')" class="border-img">
+					<img src="../static/img/log3.png" style="width:50px;">
+				</div>
+		
+			
+				<div @click="handleToNav('Discount')"  class="border-img">
+					<img src="../static/img/log4.png" style="width:50px;">
+				</div>
+	
+			
+				<div @click="handleToNav('data')"  class="border-wri2">
+					数据分析
+				</div>
+		
+		
+				<div @click="handleToNav('Discount')"  class="border-wri2">
+					活动优惠
+				</div>
+			
+			
+			</div>
+           
+		   
+		   
+		   
+		   
+		   
+        </div>
+	<div class="bott" >
+		<div class="bot1" @click="handleToNav('index')">
+			店铺主页
+		</div>
+		<div class="bot2" @click="handleToNav('nav2')">
+			个人中心
+		</div>
+	</div>
+		
+		
+		
+        <div class="popup-wrap" v-if="logoutVisible">
+            <div class="popup-main">
+                <div class="popup-header">
+                    <p class="popup-title">提示</p>
+                </div>
+                <p>是否退出当期登录账号？</p>
+                <div class="btn-group">
+                    <button class="btn btn-confirm" @click="handleLogout">确定</button>
+                    <button class="btn btn-cancel" @click="logoutVisible = false">取消</button>
+                </div>
+            </div>
+        </div>       
+        <!-- 内容 结束 -->
+
+    </div>
+    <script>
+        var wxApp = new Vue({
+            el: '#wxApp',
+            data: {
+                // 退出登录
+                logoutVisible: false,
+            },
+            methods: {
+                // 后退
+                handleBack: function () {
+                    AppUtil.Back();
+                },
+                handleToNav: function (nav) {
+                    AppUtil.GoUrl("appHtml/" + nav + ".html");
+                },
+                handleLogout: function () {
+                    AppUtil.GoUrl("appHtml/login.html");
+                },
+            }
+        });
+    </script>
+</body>
+
+</html>

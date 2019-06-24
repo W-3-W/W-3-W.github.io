@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>联系客服</title>
+    <script type="text/javascript">
+        var root_dir = "appHtml";
+        var curPath = document.location.href;
+        var file = curPath.split('/')[curPath.split('/').length - 1];
+        var jsFile = file.split('.')[0] + ".js";
+        var pos = curPath.indexOf(root_dir);
+        basePath = curPath.substr(0, pos);
+        document.write("<base href=" + basePath + "/ >");
+    </script>
+
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../static/css/index.css" />
+	<link rel="stylesheet" type="text/css" href="../static/css/order.css" />	
+    <script src="../static/js/bin/res-bin.js"></script>
+    <script src="../static/js/plug/res-plug.js"></script>
+    <script src="../static/js/page/index.js"></script>
+</head>
+
+
+<body>
+    <div class="index-main" id="wxApp">
+        <!-- 头部 开始 -->
+        <div class="head">
+             <span class="head-goback" @click="handleBack"></span>
+            <span>联系客服</span>
+            <img class="head-menu" @click="logoutVisible = true" src="../static/img/menu2.png" alt="">
+        </div>
+        <!-- 头部 结束 -->
+
+        <!-- 内容 开始 -->
+
+        <div class="order-content">
+		<!--我的资料开始-->
+			<div class="con-one marbot16">
+				<img src="../static/img/tit-lef.png" class="conone-img" >
+				热线电话
+			</div>
+			<div class="datamid-bor kf-border">
+					<div class=" floatleft">0591-85731333</div>
+					<div class="ord-confirm martop " >拨打电话</div>
+				</div>
+			
+			
+				
+           
+		   <!--我的资料结束-->
+		   
+		   
+		   
+		   
+		  
+				
+        </div>
+
+        <div class="popup-wrap" v-if="logoutVisible">
+            <div class="popup-main">
+                <div class="popup-header">
+                    <p class="popup-title">提示</p>
+                </div>
+                <p>是否退出当期登录账号？</p>
+                <div class="btn-group">
+                    <button class="btn btn-confirm" @click="handleLogout">确定</button>
+                    <button class="btn btn-cancel" @click="logoutVisible = false">取消</button>
+                </div>
+            </div>
+        </div>       
+        <!-- 内容 结束 -->
+
+    </div>
+    <script>
+        var wxApp = new Vue({
+            el: '#wxApp',
+            data: {
+                // 退出登录
+                logoutVisible: false,
+            },
+            methods: {
+                // 后退
+                handleBack: function () {
+                    AppUtil.Back();
+                },
+                handleToNav: function (nav) {
+                    AppUtil.GoUrl("appHtml/" + nav + ".html");
+                },
+                handleLogout: function () {
+                    AppUtil.GoUrl("appHtml/login.html");
+                },
+            }
+        });
+    </script>
+</body>
+
+</html>

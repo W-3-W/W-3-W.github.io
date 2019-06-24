@@ -1,0 +1,144 @@
+.con-one{
+	margin-top: 29px;
+	margin-left: 37px;
+}
+.conone-img{
+	width:5px;
+	position: absolute;
+	left: 26px;
+}
+.con-two{
+    border: 1px solid #fb5b65;
+    height: 120px;
+    width: 86vw;
+    margin: 0 auto;
+    border-radius: 14px;
+	margin-top: 11px;
+	font-size: 12px;
+}
+.border-num{
+	width:50%; 
+	height:30px; 
+	float:left; 
+	text-align:center;
+	line-height:40px;
+}
+.border-wri{
+	width:50%;
+	height:30px;
+	float:left; 
+	text-align:center; 
+	line-height:20px;
+}
+.con-three{
+    border: 1px solid #fb5b65;
+    height: 200px;
+    width: 86vw;
+    margin: 0 auto;
+    border-radius: 14px;
+	margin-top: 11px;
+	font-size: 12px;
+	padding-top:12px;
+}
+.border-img{
+	width:50%; 
+	height:50px;
+	float:left; 
+	text-align:center;
+	line-height:50px;
+}
+.border-wri2{
+	width:50%; 
+	height:50px; 
+	float:left; 
+	text-align:center;
+	line-height:36px;
+}
+.marbot16{
+	margin-bottom: 16px;
+}
+.martop{
+	margin-top: 8px;
+}
+.kf-border{
+	width: 92vw;
+    margin: 0 auto;
+}
+.us-border{
+	letter-spacing: 5px;
+	font-size: 13px;
+	text-indent: 2em;
+	padding: 20px;
+	background: white;
+    height: 163px;
+    border-radius: 10px;
+    width: 94vw;
+    margin: 18px auto;
+}
+.passcontent{
+	margin-top: 23px;
+    width: 86vw;
+    margin: 26px auto;
+}
+.passcontent input{
+	 border: 0;
+	outline: none;
+	height: 36px;
+	width: 100%;
+	padding-left: 16px;
+	margin-top: 10px;
+}
+.pass-btn {
+    margin: 33px auto;
+    height: 37px;
+    width: 122px;
+    text-align: center;
+    font-size: 12px;
+    background: -webkit-linear-gradient( top,#ff8a7a,#fa445b);
+    border-radius: 9px;
+    margin-right: 15px	height: 23px;
+    line-height: 37px;
+    color: #FFFFFF;
+}
+.set-btn{
+    position: absolute;
+    font-size: 10px;
+    width: 73px;
+    height: 23px;
+    line-height: 23px;
+    text-align: center;
+    right: 37px;
+    top: 163px;
+    background: #fb5562;
+    color: #fff;
+    border-radius: 5px;
+}
+a{
+	text-decoration:none ;
+	out-line: none;
+	color:#000000;
+}
+.bott{
+	position: fixed;
+    width: 100vw;
+    height: 66px;
+    background-color: #fb5b65;
+    bottom: 0;
+	text-align: center;
+	line-height: 66px;
+	color:#FFFFFF;
+	font-size: 22px;
+
+}
+.bot1{
+	width:50vw;
+	height:66px;
+	float:left;
+
+}
+.bot2{
+	width:50vw;
+	height:66px;
+	float:left;
+
+}

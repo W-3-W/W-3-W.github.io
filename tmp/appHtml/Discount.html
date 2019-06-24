@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>优惠活动</title>
+    <script type="text/javascript">
+        var root_dir = "appHtml";
+        var curPath = document.location.href;
+        var file = curPath.split('/')[curPath.split('/').length - 1];
+        var jsFile = file.split('.')[0] + ".js";
+        var pos = curPath.indexOf(root_dir);
+        basePath = curPath.substr(0, pos);
+        document.write("<base href=" + basePath + "/ >");
+    </script>
+
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../static/css/index.css" />
+	<link rel="stylesheet" type="text/css" href="../static/css/order.css" />	
+    <script src="../static/js/bin/res-bin.js"></script>
+    <script src="../static/js/plug/res-plug.js"></script>
+    <script src="../static/js/page/index.js"></script>
+</head>
+
+
+<body>
+    <div class="index-main" id="wxApp">
+        <!-- 头部 开始 -->
+        <div class="head">
+             <span class="head-goback" @click="handleBack"></span>
+            <span>优惠活动</span>
+            <img class="head-menu" @click="logoutVisible = true" src="../static/img/menu2.png" alt="">
+        </div>
+        <!-- 头部 结束 -->
+
+        <!-- 内容 开始 -->
+
+        <div class="order-content">
+			 <div class="discou" >
+		   <!--part1开始-->
+				<div class="ordmid-bor">
+					<div class="ordmid-img">
+						<img src="../static/img/example.png">
+					</div>
+					<div class="padtop18">
+						<div class="distit1">新居开荒</div>
+						<div class="distit2" >新家入住全面大扫除</div>
+						<div class="disnotic">活动已过期</div>
+					</div>
+				</div>
+				<!--part1结束-->
+				
+				
+				
+				
+		   </div>
+           
+        </div>
+
+        <div class="popup-wrap" v-if="logoutVisible">
+            <div class="popup-main">
+                <div class="popup-header">
+                    <p class="popup-title">提示</p>
+                </div>
+                <p>是否退出当期登录账号？</p>
+                <div class="btn-group">
+                    <button class="btn btn-confirm" @click="handleLogout">确定</button>
+                    <button class="btn btn-cancel" @click="logoutVisible = false">取消</button>
+                </div>
+            </div>
+        </div>       
+        <!-- 内容 结束 -->
+
+    </div>
+    <script>
+        var wxApp = new Vue({
+            el: '#wxApp',
+            data: {
+                // 退出登录
+                logoutVisible: false,
+            },
+            methods: {
+                // 后退
+                handleBack: function () {
+                    AppUtil.Back();
+                },
+                handleToNav: function (nav) {
+                    AppUtil.GoUrl("appHtml/" + nav + ".html");
+                },
+                handleLogout: function () {
+                    AppUtil.GoUrl("appHtml/login.html");
+                },
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>首页</title>
+    <script type="text/javascript">
+        var root_dir = "appHtml";
+        var curPath = document.location.href;
+        var file = curPath.split('/')[curPath.split('/').length - 1];
+        var jsFile = file.split('.')[0] + ".js";
+        var pos = curPath.indexOf(root_dir);
+        basePath = curPath.substr(0, pos);
+        document.write("<base href=" + basePath + "/ >");
+    </script>
+
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../static/css/index.css" />
+	<link rel="stylesheet" type="text/css" href="../static/css/order.css" />
+    <script src="../static/js/bin/res-bin.js"></script>
+    <script src="../static/js/plug/res-plug.js"></script>
+    <script src="../static/js/page/index.js"></script>
+	<script src="../static/js/bin/jquery.min.js"></script>
+</head>
+
+
+<body>
+    <div class="index-main" id="wxApp">
+        <!-- 头部 开始 -->
+        <div class="head">
+             <span class="head-goback" @click="handleBack"></span>
+            <span>全部订单</span>
+            <img class="head-menu" @click="logoutVisible = true" src="../static/img/menu2.png" alt="">
+        </div>
+        <!-- 头部 结束 -->
+
+        <!-- 内容 开始 -->
+
+        <div class="order-content">
+			<div class="order-tit">
+				<div class="tit-left">
+					<div class="ord-titl" :class="{'bor-red' : menuType === 'todo'}" @click="menuType='todo'" >
+						待处理
+						<div class="bor1":class="{'ord-bor' : menuType === 'todo'}" > </div>
+					</div>
+				</div>
+				<div class="tit-left">
+					<div class="ord-tit2" :class="{'bor-red' : menuType === 'done'}" @click="menuType='done'" >
+						已完成
+						<div class="bor2" :class="{'ord-bor' : menuType === 'done'}"></div>
+					</div>
+				</div>
+			</div>
+			<!--待处理开始-->
+           <div class="ord-mid" :class="{'disnone' : menuType === 'done'}" >
+		   <!--part1开始-->
+				<div class="ordmid-bor">
+					<div class="ordmid-img">
+						<img src="../static/img/example.png">
+					</div>
+					<div class="padtop18">
+						<div class="fontweight">新居开荒</div>
+						<div class="middetial">新家入住全面大扫除</div>
+						<div class="middetial2">周期：周期单次</div>
+						<div class="middetial2">时长：2个小时</div>
+						<div class="middetial2 floatleft">人数：4人</div>
+						<div class="ord-confirm" >确认完成</div>
+					</div>
+				</div>
+				<!--part1结束-->
+				
+			   <!--part2开始-->				
+				<div class="ordmid-bor martop18">
+					<div class="ordmid-img">
+						<img src="../static/img/example.png">
+					</div>
+					<div class="padtop18">
+						<div class="fontweight">新居开荒</div>
+						<div class="middetial">新家入住全面大扫除</div>
+						<div class="middetial2">周期：周期单次</div>
+						<div class="middetial2">时长：2个小时</div>
+						<div class="middetial2 floatleft">人数：4人</div>
+						<div class="ord-confirm" >确认完成</div>
+					</div>
+				</div>
+				<!--part2结束-->
+				
+				
+				
+		   </div>
+		   
+		   <!--待处理结束-->
+		   
+		   
+		   
+		   
+		   
+		   
+		   <!--已完成开始-->
+		    <div class="ord-mid2" :class="{'disshow' : menuType === 'done'}" >
+			   <!--part1开始-->
+					<div class="ordmid-bor">
+						<div class="ordmid-img">
+							<img src="../static/img/example.png">
+						</div>
+						<div class="padtop18">
+							<div class="fontweight">地毯清洗</div>
+							<div class="middetial">地毯全面清洗，一尘不染</div>
+							<div class="middetial2">周期：周期一次</div>
+							<div class="middetial2">时长：1小时</div>
+							<div class="middetial2 floatleft">人数：2人</div>
+							<div class="ord-complete" >订单完成</div>
+						</div>
+					</div>
+					<!--part1结束-->
+					
+				   <!--part2开始-->				
+					<div class="ordmid-bor martop18">
+						<div class="ordmid-img">
+							<img src="../static/img/example.png">
+						</div>
+						<div class="padtop18">
+							<div class="fontweight">洗衣机污垢清理</div>
+							<div class="middetial">洗衣机污垢清理</div>
+							<div class="middetial2">周期：每周一次</div>
+							<div class="middetial2">时长：3小时</div>
+							<div class="middetial2 floatleft">人数：1人</div>
+							<div class="ord-complete" >订单完成</div>
+						</div>
+					</div>
+					<!--part2结束-->			
+			
+			
+			</div>
+		   <!--已完成结束-->  
+	
+		   
+		   
+        </div>
+
+        <div class="popup-wrap" v-if="logoutVisible">
+            <div class="popup-main">
+                <div class="popup-header">
+                    <p class="popup-title">提示</p>
+                </div>
+                <p>是否退出当期登录账号？</p>
+                <div class="btn-group">
+                    <button class="btn btn-confirm" @click="handleLogout">确定</button>
+                    <button class="btn btn-cancel" @click="logoutVisible = false">取消</button>
+                </div>
+            </div>
+        </div>       
+        <!-- 内容 结束 -->
+
+    </div>
+    <script>
+        var wxApp = new Vue({
+            el: '#wxApp',
+            data: {
+                // 退出登录
+                logoutVisible: false,
+				menuType:'todo',
+            },
+            methods: {
+                // 后退
+                handleBack: function () {
+                    AppUtil.Back();
+                },
+                handleToNav: function (nav) {
+                    AppUtil.GoUrl("appHtml/" + nav + ".html");
+                },
+                handleLogout: function () {
+                    AppUtil.GoUrl("appHtml/login.html");
+                },	
+            }
+        });
+    </script>
+</body>
+
+</html>

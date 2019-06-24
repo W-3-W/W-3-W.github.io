@@ -1,0 +1,7 @@
+/* * Author:GuanQun * Time:2017/08/08 */
+#toast {border: 0px #f00 solid;position: absolute;top: 0;bottom: 0;right: 0;left: 0;display: flex;justify-content: center;align-items: flex-end;z-index: 5000;display: none;animation-duration: 1s;animation-fill-mode: both;animation-name: bounce;transform-origin: center bottom;}
+#show{display: inline-table;border-radius: 16px;padding-left: 16px;padding-right: 16px;padding-top: 5.5px;padding-bottom: 5.5px;background-color: rgba(51,51,51,0.85);color: white;font-size: 16px !important;margin-bottom: 25px;}
+@keyframes bounce {from, 20%, 53%, 80%, to {animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);transform: translate3d(0,0,0);}
+40%, 43% {animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);transform: translate3d(0, -15px, 0);}
+70% {animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);transform: translate3d(0, -5px, 0);}
+90% {transform: translate3d(0,-1px,0);}}
