@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>多规格管理</title>
+    <link rel="stylesheet" href="css/mui.css" />
+    <link rel="stylesheet" href="font/iconfont.css" />
+    <link rel="stylesheet" href="css/business.css" />
+</head>
+<body>
+   <header class="pe-tit">
+        <div>
+            <a href="javascript:history.go(-1)">
+                <span class="icon iconfont iconfanhuijiantou"></span>
+            </a>
+            <span class="pe-type">
+                <span class="pet-tit">多规格管理</span>
+            </span>
+        </div>
+        <div>
+           保存
+        </div>
+   </header>
+   <div class="pe-distance"> </div>
+   <div class="id-tit1">
+        商品规格（调高价格可能需要市场经理审核）
+    </div>  
+    <div>
+        <div class="id-part">
+            <div class="id-item">
+                <div>
+                        <span>规格名</span>
+                        <input type="text" placeholder="如 大份 中杯 6寸" >
+                </div>
+            </div>
+            <div class="id-item">
+                    <div>
+                        <span>价格</span>
+                        <input type="text" value="36.00" >
+                    </div>
+                    <div class="fon-3 col-c0c">
+                        元
+                    </div>
+                </div>
+                <div class="id-item">
+                    <div>
+                        <span>餐盒费</span>
+                        <input type="text" value="0.00" >
+                    </div>
+                    <div class="fon-3 col-c0c">
+                        元
+                    </div>
+                </div>
+                <div class="id-item">
+                    <div>
+                        <span>当前库存</span>
+                        <input type="text" value="1000" >
+                    </div>
+                    <div class="fon-3 col-31">
+                            估清 置满
+                    </div>
+                </div>
+                <div class="id-item">
+                    <div>
+                        <span>最大库存</span>
+                        <input type="text" value="10000" >
+                    </div>
+                </div>
+                <div class="id-item">
+                    <div>
+                        <span>库存次日置满</span>
+                        <span class="icon iconfont iconwenhao  fon-3 col-67c"></span>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="checkbox_c3" class="chk_3">
+                        <label for="checkbox_c3"></label>
+                    </div>
+                </div>
+                <div class="id-item">
+                    <div>
+                        <span>热量</span>
+                    </div>
+                    <div class="fon-3 col-c0c">
+                            kcal/100g
+                    </div>
+                </div>
+                <div class="id-item">
+                    <div>
+                        <span>重量</span>
+                        <input type="text" value="0" >
+                    </div>
+                    <div class="fon-3 col-c0c">
+                            克
+                    </div>
+                </div>
+                <div class="id-item">
+                    <div>
+                        <span>条形码</span>
+                        <input type="text" placeholder="选项" >
+                    </div>
+                </div>
+        </div>
+        <div class="idsp-del">
+            删除该规格
+        </div>    
+    </div>
+
+
+
+    <div>
+        <div class="id-part mar-t9">
+            <div class="id-item">
+                <div>
+                    <span>规格名</span>
+                    <input type="text" placeholder="如 大份 中杯 6寸" >
+                </div>
+            </div>
+            <div class="id-item">
+                <div>
+                    <span>价格</span>
+                    <input type="text" value="36.00" >
+                </div>
+                <div class="fon-3 col-c0c">
+                    元
+                </div>
+            </div>
+            <div class="id-item">
+                <div>
+                    <span>餐盒费</span>
+                    <input type="text" value="0.00" >
+                </div>
+                <div class="fon-3 col-c0c">
+                    元
+                </div>
+            </div>
+            <div class="id-item">
+                <div>
+                    <span>当前库存</span>
+                    <input type="text" value="1000" >
+                </div>
+                <div class="fon-3 col-31">
+                        估清 置满
+                </div>
+            </div>
+            <div class="id-item">
+                <div>
+                    <span>最大库存</span>
+                    <input type="text" value="10000" >
+                </div>
+            </div>
+            <div class="id-item">
+                <div>
+                    <span>库存次日置满</span>
+                    <span class="icon iconfont iconwenhao  fon-3 col-67c"></span>
+                </div>
+                <div>
+                    <input type="checkbox" id="checkbox_c4" class="chk_3">
+                    <label for="checkbox_c4"></label>
+                </div>
+            </div>
+            <div class="id-item">
+                <div>
+                    <span>热量</span>
+                </div>
+                <div class="fon-3 col-c0c">
+                        kcal/100g
+                </div>
+            </div>
+            <div class="id-item">
+                <div>
+                    <span>重量</span>
+                    <input type="text" value="0" >
+                </div>
+                <div class="fon-3 col-c0c">
+                        克
+                </div>
+            </div>
+            <div class="id-item">
+                <div>
+                    <span>条形码</span>
+                    <input type="text" placeholder="选项" >
+                </div>
+            </div>
+        </div>
+        <div class="idsp-del">
+            删除该规格
+        </div>
+    </div>
+ 
+
+
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="js/rem.js"></script>
+<script>
+   $('.idsp-del').click(function(){
+    $(this).parent().hide();
+   })
+</script>
+
+</html>
+
+ 
+
+

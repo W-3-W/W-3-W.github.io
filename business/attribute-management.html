@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>属性管理</title>
+    <link rel="stylesheet" href="css/mui.css" />
+    <link rel="stylesheet" href="font/iconfont.css" />
+    <link rel="stylesheet" href="css/business.css" />
+</head>
+<body>
+   <header class="pe-tit">
+        <div>
+            <a href="javascript:history.go(-1)">
+                <span class="icon iconfont iconfanhuijiantou"></span>
+            </a>
+            <span class="pe-type">
+                <span class="pet-tit">属性管理</span>
+            </span>
+        </div>
+        <div>
+           保存
+        </div>
+   </header>
+   <div class="pe-distance"> </div>
+   <div class="am-part">
+        <div class="am-item">   
+            <div class="am-tit">属性名</div>
+            <input type="text" placeholder="请填写，如甜度，辣度" >
+        </div>
+        <div class="am-item">   
+            <div class="am-tit">属性选项</div>
+            <div class="am-lab">
+                <div class="am-bor">
+                    填写属性
+                </div>
+            </div>
+        </div>
+        <div class="am-del">
+            删除该属性
+        </div>
+    </div>
+    <div class="am-part">
+        <div class="am-item">   
+            <div class="am-tit">属性名</div>
+            <input type="text" placeholder="请填写，如甜度，辣度" >
+        </div>
+        <div class="am-item">   
+            <div class="am-tit">属性选项</div>
+            <div class="am-lab">
+                <div class="am-bor">
+                    填写属性
+                </div>
+            </div>
+        </div>
+        <div class="am-del">
+            删除该属性
+        </div>
+    </div>
+    <div class="am-part">
+        <div class="am-item">   
+            <div class="am-tit">属性名</div>
+            <input type="text" placeholder="请填写，如甜度，辣度" >
+        </div>
+        <div class="am-item">   
+            <div class="am-tit">属性选项</div>
+            <div class="am-lab">
+                <div class="am-bor">
+                    填写属性
+                </div>
+            </div>
+        </div>
+        <div class="am-del">
+            删除该属性
+        </div>
+    </div>
+    <div class="am-part">
+        <div class="am-item">   
+            <div class="am-tit">属性名</div>
+            <input type="text" placeholder="请填写，如甜度，辣度" >
+        </div>
+        <div class="am-item">   
+            <div class="am-tit">属性选项</div>
+            <div class="am-lab">
+                <div class="am-bor">
+                    填写属性
+                </div>
+            </div>
+        </div>
+        <div class="am-del">
+            删除该属性
+        </div>
+    </div>
+
+
+    <div class="am-part">
+        <div class="am-item">   
+            <div class="am-tit">属性名</div>
+            <input type="text" placeholder="请填写，如甜度，辣度" >
+        </div>
+        <div class="am-item">   
+            <div class="am-tit">属性选项</div>
+            <div class="am-lab">
+                <div class="amb-pri">
+                    不辣
+                </div>
+                <div class="amb-pri">
+                    微辣
+                </div>
+    
+                <div class="amb-pri amb-sel">
+                    中辣
+                </div>
+                <div class="amb-pri">
+                    特辣
+                </div>
+                <div class="amb-pri">
+                    魔鬼辣
+                </div>
+                <div class="am-bor">
+                    填写属性
+                </div>
+            </div>
+        </div>
+        <div class="am-del">
+            删除该属性
+        </div>
+    </div>
+    <div class="am-bot"></div>
+    <footer class="am-foot">
+        <div>
+            新建模板
+        </div>
+        <div>
+            常用模板
+        </div>
+    </footer>
+ 
+
+
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="js/rem.js"></script>
+<script>
+   $('.am-lab .amb-pri').click(function(){
+       $(this).addClass('amb-sel').siblings().removeClass('amb-sel');
+   })
+   $('.am-del').click(function(){
+       $(this).parent().hide();
+   })
+</script>
+
+</html>
+
+ 
+
+

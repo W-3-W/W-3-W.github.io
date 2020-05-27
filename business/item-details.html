@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>单品编辑</title>
+    <link rel="stylesheet" href="css/mui.css" />
+    <link rel="stylesheet" href="font/iconfont.css" />
+    <link rel="stylesheet" href="css/business.css" />
+</head>
+<body>
+   <header class="pe-tit">
+        <div>
+            <a href="javascript:history.go(-1)">
+                <span class="icon iconfont iconfanhuijiantou"></span>
+            </a>
+            <span class="pe-type">
+                <span class="pet-tit">爱咔溜商家版</span>
+            </span>
+        </div>
+        <div>
+           保存
+        </div>
+   </header>
+   <div class="pe-distance"> </div>
+   <div class="id-tit1">
+       基本信息
+   </div>
+   <div class="id-part">
+        <div class="idp-img">
+            <div>
+                商品图片
+            </div>
+            <div class="idp-im">
+                <div class="idp-i">
+                    <img src="images/kbqn.jpg">
+                </div>
+                主图
+            </div>
+        </div>
+        <div class="id-tips">
+            <div>
+                如何搜索合适尺寸的图片？
+            </div>
+            <div>
+               美化图片，提高下单转化，去服务市场
+            </div>
+        </div>
+       <div class="id-item">
+           <div>
+                <span>商品名称</span>
+                <input type="text" value="拿铁" >
+           </div>
+       </div>
+       <div class="id-item">
+            <div>
+                <span>商品描述</span>
+                <input type="text" placeholder="选填，300字以内" >
+            </div>
+        </div>
+        <div class="id-item">
+            <div>
+                <span>商品标签</span>
+                <input type="text" placeholder="必填，可提升曝光度" >
+            </div>
+            <div>
+                <span class="icon iconfont icon_next_02 fon-3 col-c0c"></span>
+            </div>
+        </div>
+        <div class="id-item">
+            <div>
+                <span>商品特色</span>
+                <input type="text" placeholder="可选，如：招牌，新品" >
+            </div>
+            <div>
+                <span class="icon iconfont icon_next_02 fon-3 col-c0c"></span>
+            </div>
+        </div>
+        <div class="id-item">
+            <div>
+                <span>店内分类</span>
+                <input type="text" value="香浓咖啡" >
+            </div>
+            <div>
+                <span class="icon iconfont icon_next_02 fon-3 col-c0c"></span>
+            </div>
+        </div>
+   </div>
+   <div class="id-tit1">
+        商品规格（调高价格可能需要市场经理审核）
+    </div>
+    <div class="id-part">
+        <div class="id-item">
+            <div>
+                <span>价格</span>
+                <input type="text" value="36.00" >
+            </div>
+            <div class="fon-3 col-c0c">
+                元
+            </div>
+        </div>
+        <div class="id-item">
+            <div>
+                <span>餐盒费</span>
+                <input type="text" value="0.00" >
+            </div>
+            <div class="fon-3 col-c0c">
+                元
+            </div>
+        </div>
+        <div class="id-item">
+            <div>
+                <span>当前库存</span>
+                <input type="text" value="1000" >
+            </div>
+            <div class="fon-3 col-31">
+                    估清 置满
+            </div>
+        </div>
+        <div class="id-item">
+            <div>
+                <span>最大库存</span>
+                <input type="text" value="10000" >
+            </div>
+        </div>
+        <div class="id-item">
+            <div>
+                <span>库存次日置满</span>
+                <span class="icon iconfont iconwenhao  fon-3 col-67c"></span>
+            </div>
+            <div>
+                <input type="checkbox" id="checkbox_c1" class="chk_3">
+                <label for="checkbox_c1"></label>
+            </div>
+        </div>
+        <div class="id-item">
+            <div>
+                <span>热量</span>
+            </div>
+            <div class="fon-3 col-c0c">
+                    kcal/100g
+            </div>
+        </div>
+        <div class="id-item">
+            <div>
+                <span>重量</span>
+                <input type="text" value="0" >
+            </div>
+            <div class="fon-3 col-c0c">
+                    克
+            </div>
+        </div>
+        <div class="id-item">
+            <div>
+                <span>条形码</span>
+                <input type="text" placeholder="选项" >
+            </div>
+        </div>
+    </div>
+    <a href="spec-management.html">
+        <div class="id-add">
+            <span class="icon iconfont iconadd mar-r3 fon-6 ver-mid"></span>
+            添加多规格
+        </div>
+    </a>
+    <div class="id-tit2">
+        商品属性（微辣、去冰、大份等）
+    </div>
+    <a href="attribute-management.html">
+        <div class="id-add">
+            <span class="icon iconfont iconadd mar-r3 fon-6 ver-mid"></span>
+            添加属性
+        </div>
+    </a>
+    <div class="id-tit2">
+        售卖时段（默认全时段售卖）
+    </div>
+    <a href="sale-time.html">
+        <div class="id-add">
+            <span class="icon iconfont iconadd mar-r3 fon-6 ver-mid"></span>
+            添加售卖时间
+        </div>
+    </a>
+    <div class="id-tit1">
+        其他信息
+    </div>
+    <div class="id-part">
+        <div class="id-item">
+            <div>
+                <span>最小购买量</span>
+                <input type="text" value="1" >
+            </div>
+        </div>
+        <div class="id-item">
+            <div>
+                <span>商品单位</span>
+                <input type="text" value="份" >
+            </div>
+        </div>
+        <div class="id-item">
+            <div>
+                <span>参加热搜排行</span>
+            </div>
+            <div>
+                <input type="checkbox" id="checkbox_c2" class="chk_3" checked>
+                <label for="checkbox_c2"></label>
+            </div>
+        </div>
+    </div>
+    <div class="id-del">
+        删除商品
+    </div>
+
+
+
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="js/rem.js"></script>
+<script>
+   
+</script>
+
+</html>
+
+ 
+
+

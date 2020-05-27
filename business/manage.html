@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>管理</title>
+    <link rel="stylesheet" href="css/mui.css" />
+    <link rel="stylesheet" href="font/iconfont.css" />
+    <link rel="stylesheet" href="css/swiper.css" />
+    <link rel="stylesheet" href="css/business.css" />
+</head>
+<body>
+   <header class="m-header">
+      店铺管理
+   </header>
+   <div class="m-data">
+       <div>
+            <div class="m-num">
+                0.00
+            </div>
+            <div>
+                今日预计收入
+            </div>
+       </div>
+       <div>
+           <div class="m-num">
+                0
+            </div>
+            <div>
+                有效订单
+            </div>
+       </div>
+       <div class="m-gonum">
+         <span class="icon iconfont icon_next_02 fon-3"></span>
+       </div>
+   </div>
+   <div class="m-access">
+        <div class="m-apart">
+            <div>
+                <a href="Product edit.html">
+                    <div class="mar-b1">
+                        <span class="icon iconfont iconmerchandise fon-6 col-31 "></span>
+                    </div>
+                    <div> 
+                        商品
+                    </div>
+                </a>
+            </div>
+            <div>
+                <a href="Merchant-Wallet.html">
+                    <div class="mar-b1">
+                        <span class="icon iconfont iconqianbao fon-6 col-31 "></span>
+                    </div>
+                    <div>
+                        钱包
+                    </div>
+                </a>
+            </div>
+            <div>
+                <div class="mar-b1">
+                    <span class="icon iconfont iconpingjia fon-6 col-31 "></span>
+                </div>
+                <div>
+                    评价
+                </div>
+            </div>
+            <div>
+                <a href="data-center.html">
+                    <div class="mar-b1">
+                        <span class="icon iconfont iconshuju fon-6 col-31 "></span>
+                    </div>
+                    <div>
+                        数据
+                    </div>
+                </a>
+            </div>
+        </div>
+   </div>
+  <div class="m-limittime">
+    <div class="mli-head">
+        <div>
+            限时新店任务<span class="col-31 mar-l2">7</span><span class="mil-task">\6</span>
+            <span class="icon iconfont iconwenhao1 fon-2 col-31 mar-l2"></span>
+        </div>
+        <div class="col-b4b">
+            剩余
+            <Span class="col-31">
+                27
+            </Span>
+            天
+        </div>
+    </div>
+    <div class="mli-con">
+        <div class="dis-fcenter">
+            <div class="m-taskimg">
+                <img src="images/banner.png">
+            </div>
+            <div>
+                <div>
+                    做任务赢新店专属奖励
+                </div>
+                <div class="m-tit2">
+                    流量加持，充返等活动
+                </div>
+            </div>
+        </div>
+        <div class="m-gotask">
+            做任务<span class="icon iconfont icon_next_02 fon-2"></span>
+        </div>
+    </div>
+  </div>
+   <div class="m-skills">
+        <div class="m-skitit">
+            赚钱小技巧
+        </div>
+        <div class="msk-con">
+            <div class="dis-fcenter">
+                <div class="msk-img">
+                    <img src="images/banner.png">
+                </div>
+                <div>
+                    <div>
+                        营销中心
+                    </div>
+                    <div class="m-tit2">
+                        查看及开通活动
+                    </div>
+                </div>
+            </div>
+            <div class="dis-fcenter">
+                <div class="msk-img">
+                    <img src="images/banner.png">
+                </div>
+                <div>
+                    <div>
+                        智能满减
+                    </div>
+                    <div class="m-tit2">
+                        千万级流量入口
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="msk-con2">
+            <div class="dis-fcenter">
+                <div class="msk-img">
+                    <img src="images/banner.png">
+                </div>
+                <div>
+                    <div>
+                        店铺推广
+                    </div>
+                    <div class="m-tit2">
+                        获取更多顾客
+                    </div>
+                </div>
+            </div>
+            <div class="dis-fcenter">
+                <div class="msk-img">
+                    <img src="images/banner.png">
+                </div>
+                <div>
+                    <div>
+                        顾客中心
+                    </div>
+                    <div class="m-tit2">
+                        提升客户回购
+                    </div>
+                </div>
+            </div>
+        </div>
+   </div>
+   
+  
+    
+   
+    
+
+   <div class="mar-b1r"></div>
+   <footer class="common-footer">
+        <a>
+            <i></i>
+            订单处理
+        </a>
+        <a href="order-query.html">
+            <i></i>
+            订单查询
+        </a>
+        <a href="manage.html" class="footer-selected">
+            <i  class="footer-selected"></i>
+            管理        
+        </a>
+        <a href="setting.html">
+            <i></i>
+            设置
+        </a>
+   </footer>
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="js/rem.js"></script>
+<script src="js/swiper.js"></script>
+<script>
+   $('.common-footer>a').click(function(){
+    $(this).addClass('footer-selected').siblings().removeClass('footer-selected');
+    $(this).children('i').addClass('footer-selected');
+    $(this).siblings().children('i').removeClass('footer-selected');
+})
+</script>
+
+</html>
+
+ 
+
+

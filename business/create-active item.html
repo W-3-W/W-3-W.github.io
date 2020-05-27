@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>创建活动商品</title>
+    <link rel="stylesheet" href="css/mui.css" />
+    <link rel="stylesheet" href="font/iconfont.css" />
+    <link rel="stylesheet" href="css/business.css" />
+    <link rel="stylesheet" href="css/date.css" />
+</head>
+<body>
+   <header class="pe-tit">
+        <div>
+            <a href="javascript:history.go(-1)">
+                <span class="icon iconfont iconcha"></span>
+            </a>
+            <span class="pe-type">
+                <span class="pet-tit">创建活动商品</span>
+            </span>
+        </div>
+        <div>
+           创建必读
+        </div>
+   </header>
+    <div class="pe-distance"> </div>
+    <div class="ca-head">
+        <div>
+            <div>
+                每单可购买活动商品总数：1份
+            </div>
+            <div class="cad-tit2">
+                下单仅可享一份优惠，超过部分不享任何优惠
+            </div>
+        </div>
+        <div class="col-359">
+            修改
+        </div>
+    </div>
+    <div class="ca-tit">
+        适用平台
+    </div>
+    <div class="ca-plat">
+        <div>
+            饿了么
+            <span class="icon iconfont iconxuanzhong cap-sel fon-3 dis-b"></span>
+        </div>
+        <div>
+            美团
+            <span class="icon iconfont iconxuanzhong cap-sel fon-3"></span>
+        </div>
+        <div>
+            百度外卖
+            <span class="icon iconfont iconxuanzhong cap-sel fon-3"></span>
+        </div>
+    </div>
+    <div class="ca-tit">
+        优惠
+    </div>
+    <div class="ca-discount">
+        <div class="ca-distit1">
+            <div>
+                活动类型
+            </div>
+            <div class="ca-distype">
+                <div class="cad-sle">
+                    特价
+                </div>
+                <div>
+                    折扣
+                </div>
+                <div>
+                    立减
+                </div>
+            </div>
+        </div>
+        <div class="ca-dispart2">
+            <div class="ca-single">
+                <span>
+                    每份
+                </span>
+                <span>
+                   <span class="icon iconfont  icon_next_02 col-959  fon-3"></span>
+                </span>
+            </div>
+            <div class="cad2-pri">
+                <input type="number" placeholder="请填写价格" >
+                元
+            </div>
+        </div>
+        <div class="ca-dispart3">
+            <div>
+                每单限购
+                <span class="icon iconfont  iconwenhao ca-doubt"></span>
+                <span class="col-959">1份</span>
+            </div>
+            <div>
+                <span class="icon iconfont  icon_next_02 col-959  fon-3"></span>
+            </div>
+        </div>
+        <div class="ca-dispart4">
+            <div>
+                活动库存
+                <span class="icon iconfont  iconwenhao ca-doubt2"></span>
+            </div>
+            <div class="ca-single">
+                <span>
+                    每日库存
+                </span>
+                <span>
+                   <span class="icon iconfont  icon_next_02 col-959  fon-3"></span>
+                </span>
+            </div>
+            <div class="cad2-pri">
+                <input type="number" placeholder="10000" >
+                份
+            </div>
+        </div>
+    </div>
+    <div class="ca-tips">
+        可在选择商品后调整单个商品的活动价和库存
+    </div>
+    <div class="ca-tit">
+        时间
+    </div>
+    <div class="ca-times">
+        <div class="cat-item">
+            <div>
+                开始日期
+                <div class="ca-day">
+                    <input type="text"  id="ca-date1" placeholder="请选择日期" />
+                </div>
+            </div>
+            <div>
+                <span class="icon iconfont  icon_next_02 col-959  fon-3"></span>
+            </div>
+        </div>
+        <div class="cat-item">
+            <div>
+                开始日期
+                <div class="ca-day">
+                    <input type="text"  id="ca-date2" placeholder="请选择日期" />
+                </div>
+            </div>
+            <div>
+                <span class="icon iconfont  icon_next_02 col-959  fon-3"></span>
+            </div>
+        </div>
+        <div class="cat-item">
+            <div>
+                生效时间
+                <div class="ca-day">
+                    <input type="text"  id="ca-date3" placeholder="整周，全天" disabled />
+                </div>
+            </div>
+            <div>
+                <span class="icon iconfont  icon_next_02 col-959  fon-3"></span>
+            </div>
+        </div>
+        <div class="cat-item2">
+            <div>
+                <div>
+                    自动延期
+                </div>
+                <div class="cat-tit2">
+                    活动到期后自动延期30天
+                </div>
+            </div>
+            <div>
+                <input type="checkbox" id="ca-checkbox" class="chk_3" checked>
+                <label for="ca-checkbox"></label>
+            </div>
+        </div>
+    </div>
+    <div class="ca-tit">
+        人群
+    </div>
+    <div class="ca-times">
+        <div class="cat-item">
+            <div>
+                适用人群
+                <div class="ca-day">
+                    <input type="text"  id="ca-date3" placeholder="全部顾客" disabled />
+                </div>
+            </div>
+            <div>
+                <span class="icon iconfont  icon_next_02 col-959  fon-3"></span>
+            </div>
+        </div>
+    </div>
+    <footer class="ca-btn">
+        立即创建
+    </footer>
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="js/rem.js"></script>
+<script src="js/date2.js" charset="gb2312"></script> 
+<script src="js/date1.js"></script> 
+<script>
+    $('.ca-distype div').click(function(){
+        $(this).addClass('cad-sle').siblings().removeClass('cad-sle');
+    })
+</script>
+<script type="text/javascript">
+    $(function () {
+        var currYear = (new Date()).getFullYear();	
+        var opt={};
+        opt.date = {preset : 'date'};
+        opt.datetime = {preset : 'datetime'};
+        opt.time = {preset : 'time'};
+        opt.default = {
+            theme: 'android-ics light', //皮肤样式
+            display: 'modal', //显示方式 
+            mode: 'scroller', //日期选择模式
+            dateFormat: 'yyyy-mm-dd',
+            lang: 'zh',
+            showNow: true,
+            nowText: "今天",
+            startYear: currYear - 60, //开始年份
+            endYear: currYear + 0 //结束年份
+        };
+    
+        $("#ca-date1").mobiscroll($.extend(opt['date'], opt['default']));
+        $("#ca-date2").mobiscroll($.extend(opt['date'], opt['default']));
+    
+    });
+    </script>
+</html>
+
+ 
+
+

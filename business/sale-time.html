@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>售卖时间</title>
+    <link rel="stylesheet" href="css/mui.css" />
+    <link rel="stylesheet" href="font/iconfont.css" />
+    <link rel="stylesheet" href="css/business.css" />
+    <link rel="stylesheet" href="css/date.css" />
+</head>
+<body>
+   <header class="pe-tit">
+        <div>
+            <a href="javascript:history.go(-1)">
+                <span class="icon iconfont iconfanhuijiantou"></span>
+            </a>
+            <span class="pe-type">
+                <span class="pet-tit">售卖时间</span>
+            </span>
+        </div>
+        <div>
+           保存
+        </div>
+   </header>
+   <div class="pe-distance"> </div>
+   <div class="st-interval">
+        <div>
+            <div>
+                全时段售卖
+            </div>
+            <div>
+                <span class="icon iconfont iconlujing  fon-3 dis-non"></span>
+            </div>
+        </div>
+        <div>
+            <div>
+                限时售卖
+            </div>
+            <div>
+                <span class="icon iconfont iconlujing fon-3 dis-non st-sel"></span>
+            </div>
+        </div>
+   </div>
+   <div class="st-tit2">
+       售卖时间
+   </div>
+   <div class="st-day">
+    <div>
+        <div>
+            开始日期
+        </div>
+        <div>
+            <input type="text"  id="st-date1" placeholder="请选择" />
+        </div>
+    </div>
+    <div>
+        <div>
+            结束日期
+        </div>
+        <div>
+            <input type="text"  id="st-date2" placeholder="请选择" />
+        </div>
+    </div>
+    <div>
+        <div>
+            售卖日
+            <div class="st-days">
+                <div>
+                    周一
+                    <span class="icon iconfont iconxuanzhong days-sel fon-3"></span>
+                </div>
+                <div>
+                    周二
+                    <span class="icon iconfont iconxuanzhong days-sel fon-3"></span>
+                </div>
+                <div>
+                    周三
+                    <span class="icon iconfont iconxuanzhong days-sel fon-3"></span>
+                </div>
+                <div>
+                    周四
+                    <span class="icon iconfont iconxuanzhong days-sel fon-3"></span>
+                </div>
+                <div>
+                    周五
+                    <span class="icon iconfont iconxuanzhong days-sel fon-3"></span>
+                </div>
+                <div>
+                    周六
+                    <span class="icon iconfont iconxuanzhong days-sel fon-3"></span>
+                </div>
+                <div>
+                    周天
+                    <span class="icon iconfont iconxuanzhong days-sel fon-3"></span>
+                </div>
+            </div>
+        </div> 
+    </div>
+</div>
+<div class="st-tit2">
+    售卖时段
+</div>
+<div class="st-interval">
+    <div>
+        <div>
+            全天售卖
+        </div>
+        <div>
+            <span class="icon iconfont iconlujing  fon-3 dis-non  st-sel"></span>
+        </div>
+    </div>
+    <div>
+        <div>
+            指定时间售卖
+        </div>
+        <div>
+            <span class="icon iconfont iconlujing fon-3 dis-non"></span>
+        </div>
+    </div>
+</div>
+
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="js/rem.js"></script>
+<script src="js/date2.js" charset="gb2312"></script> 
+<script src="js/date1.js"></script> 
+<script>
+    $('.st-interval > div').click(function(){
+        $(this).find('span').addClass('st-sel');
+        $(this).siblings().find('span').removeClass('st-sel');
+    })
+    $('.st-days>div').click(function(){
+        $(this).toggleClass('days-check');
+        $(this).find('span').toggle();
+        
+    })
+</script>
+<script type="text/javascript">
+    $(function () {
+        var currYear = (new Date()).getFullYear();	
+        var opt={};
+        opt.date = {preset : 'date'};
+        opt.datetime = {preset : 'datetime'};
+        opt.time = {preset : 'time'};
+        opt.default = {
+            theme: 'android-ics light', //皮肤样式
+            display: 'modal', //显示方式 
+            mode: 'scroller', //日期选择模式
+            dateFormat: 'yyyy-mm-dd',
+            lang: 'zh',
+            showNow: true,
+            nowText: "今天",
+            startYear: currYear - 60, //开始年份
+            endYear: currYear + 0 //结束年份
+        };
+    
+        $("#st-date1").mobiscroll($.extend(opt['date'], opt['default']));
+        $("#st-date2").mobiscroll($.extend(opt['date'], opt['default']));
+    
+    });
+    </script>
+</html>
+
+ 
+
+
